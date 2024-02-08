@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 p, a{
     font-size: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
 }

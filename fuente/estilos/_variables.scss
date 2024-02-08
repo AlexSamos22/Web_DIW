@@ -1,0 +1,7 @@
+$color_negro: #000;
+$color_blanco: #fff;
+$fuente_titulos: 'Merriweather';
+$fuente_parrafos: "Work Sans";
+$fuente_basica: "serif";
+$clamp_titulos: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
+$clamp_texto: clamp(1.25rem, 1.2080rem + 0.1920vw, 1.3rem);
