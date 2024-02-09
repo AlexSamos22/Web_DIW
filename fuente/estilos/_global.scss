@@ -1,7 +1,14 @@
-p, a{
+p,
+a {
     font-size: $clamp_texto;
 }
 
-h1{
+h1 {
     font-size: $clamp_titulos;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

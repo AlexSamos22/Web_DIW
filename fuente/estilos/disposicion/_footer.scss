@@ -1,27 +1,32 @@
-.seccion1{
+.cuerpo_footer{
+    display: flex;
+    align-items: center; 
+}
+
+.seccion1 {
     display: flex;
     flex-direction: column;
 }
 
-.contacto{
+.contacto {
     display: flex;
 }
 
-.seccion2{
+.seccion2 {
     display: flex;
     flex-direction: column;
 }
 
-.seccion3{
+.seccion3 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-end;
 }
 
-.contenedor-redes{
+.contenedor-redes {
     display: flex;
 }
 
-.redes{
+.redes {
     display: flex;
 }

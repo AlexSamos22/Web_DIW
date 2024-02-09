@@ -1,0 +1,36 @@
+.contenedor_del_menu {
+    display: flex;
+    justify-content: space-between;/*Espacio entre elementos*/
+    align-items: center;
+}
+
+.enlaces_del_menu {
+    display: flex;
+}
+
+.enlace_del_menu {
+    display: flex;
+    align-items: center;
+}
+
+.flecha_del_menu {
+    display: block;
+}
+
+.anidamiento_del_menu {
+    display: none;
+}
+
+.anidamiento_del_menu.visible {
+    display: block;
+}
+
+
+.hamburguesa_del_menu {
+    align-items: center;
+    display: none;
+}
+
+.menu__img {
+    display: block;
+}

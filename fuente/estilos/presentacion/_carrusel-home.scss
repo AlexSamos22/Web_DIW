@@ -1,22 +1,21 @@
-.contenedor-carrusel{
+.contenedor-carrusel {
     position: relative;
     width: 100%;
     overflow: hidden;
-    z-index: 1; /* Hace que este detrás del menú desplegable */
+    z-index: 1;/* Hace que este detrás del menú desplegable */
 }
 
-.contenedor-carrusel img{
+.contenedor-carrusel img {
     width: 100%;
     max-height: 100%;
 }
 
-.carrusel{
+.carrusel {
     transition: all 600ms;
     height: 400px;
     overflow: hidden;
 }
 
-.imagenes{
+.imagenes {
     width: 100%;
 }
-
