@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200&display=swap');
 @import '../estilos/variables';
-@import '../estilos/media-query';
+@import "../estilos/global";
 @import '../estilos/disposicion/carrusel-home';
 @import '../estilos/disposicion/menuPrincipal';
 @import '../estilos/disposicion/tarjetas';
@@ -9,4 +9,4 @@
 @import '../estilos/presentacion/menuPrincipal';
 @import '../estilos/presentacion/tarjetas';
 @import '../estilos/presentacion/footer';
-@import "../estilos/global";
+@import '../estilos/media-query';

@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../fuente/css/menuPrincipal.css">
-    <link rel="stylesheet" href="../fuente/css/carrusel.css">
-    <link rel="stylesheet" href="../fuente/css/tarjetas.css">
-    <link rel="stylesheet" href="../fuente/css/footer.css">
+    <link rel="stylesheet" href="../fuente/estilos/principal.scss">
     <script src="../fuente/js/menuPrincipal.js" defer></script>
     <script src="../fuente/js/carrusel.js" defer></script>
     <script src="../fuente/js/tarjetas.js" defer></script>
@@ -22,7 +19,7 @@
             </section>
             <section class="logo_del_menu">
                 <a href="../fuente/index.html">
-                    <img src="/fuente/img/logo.png" alt="logo web">
+                    <img src="../fuente/img/logo.png" alt="logo web">
                     <h1>Game Pulse</h1>
                 </a>
             </section>
@@ -97,22 +94,29 @@
 
     <section class="contenedor-carrusel">
         <section class="carrusel" id="carrusel">
-            <article class="imagenes">
+            <article class="f_carrusel izquierda" id="izquierda">
+                <img src="../fuente/iconos/flecha-izquierda.svg" alt="">
+            </article>
+
+            <article class="imagenes img_1">
                 <img src="../fuente/img/resident-evil-4.jpg" alt="">
             </article>
 
-            <article class="imagenes">
-                <img src="../fuente/img/Skulls_and_bones_grande.jpg" alt="">
+            <article class="imagenes img_2">
+                <img src="../fuente/img/finalFantasy-grande.png" alt="">
             </article>
 
-            <article class="imagenes">
+            <article class="imagenes img_3">
                 <img src="../fuente/img/Prince-persia-grande.jpg" alt="">
             </article>
 
-            <article class="imagenes">
+            <article class="imagenes img_4">
                 <img src="../fuente/img/Starfield-grande.jpg" alt="">
             </article>
 
+            <article class="f_carrusel derecha" id="derecha">
+                <img src="../fuente/iconos/flecha-derecha.svg" alt="">
+            </article>
         </section>
     </section>
 
@@ -166,21 +170,21 @@
 
                 <li class="tarjeta">
                     <section class="img">
-                        <a href=""><img src="../fuente/img/Skull_and_bones.jpg" alt="Skull_and_bones"></a>
+                        <a href=""><img src="../fuente/img/starfield.jpg" alt="Starfield"></a>
                     </section>
                     <section class="info">
-                        <p>Skull and Bones</p>
-                        <p>70€</p>
+                        <p>Starfield</p>
+                        <p>50€</p>
                     </section>
                 </li>
 
                 <li class="tarjeta">
                     <section class="img">
-                        <a href=""><img src="../fuente/img/palword.jpg" alt="palword"></a>
+                        <a href=""><img src="../fuente/img/final-fantasy.jpg" alt="final-fantasy"></a>
                     </section>
                     <section class="info">
-                        <p>PalWorld</p>
-                        <p>25€</p>
+                        <p>Final Fantasy XVI</p>
+                        <p>50€</p>
                     </section>
                 </li>
 

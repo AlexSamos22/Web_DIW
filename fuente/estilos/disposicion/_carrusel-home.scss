@@ -1,8 +1,8 @@
-.carrusel{
+.contenedor-carrusel {
     display: flex;
+    justify-content: center;
 }
 
-.imagenes{
+.carrusel {
     display: flex;
-    flex-shrink: 0;
 }

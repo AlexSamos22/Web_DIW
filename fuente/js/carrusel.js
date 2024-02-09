@@ -1,39 +1,39 @@
-let carrusel = document.getElementById('carrusel');
-// Establece el tiempo de intervalo para el desplazamiento automático (en milisegundos)
-let intervalo = 3000; 
-let direccion = 1; // 1 para adelante, -1 para atrás
+let slide = document.querySelectorAll('.imagenes');
+var current = 0;
+let f_derecha = document.getElementById("derecha");
+let f_izquierda = document.getElementById("izquierda");
 
-// Función para cambiar automáticamente las imágenes
-function carrusel_auto() {
-    // Obtén todas las imágenes dentro del carrusel
-    let imagenes = carrusel.querySelectorAll('img');
-    
-    // Obtiene el ancho total del carrusel
-    let anchoCarrusel = carrusel.scrollWidth;
-    
-    // Calcula el ancho de una imagen
-    let anchoImagen = imagenes[0].clientWidth;
-    
-    // Calcula el índice de la siguiente imagen
-    let siguienteImagen = carrusel.scrollLeft + (anchoImagen * direccion);
+f_derecha.addEventListener("click", next);
+f_izquierda.addEventListener("click", prev);
 
-    // Si llega al final del carrusel, cambia la dirección del desplazamiento
-    /*
-        (anchoCarrusel - carrusel.clientWidth) representa el espacio disponible dentro del carrusel que no se está mostrando actualmente en la pantalla.
-    */
-    if (siguienteImagen >= (anchoCarrusel - carrusel.clientWidth) || siguienteImagen <= 0) {
-        direccion = -direccion;
+function cls() {
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].style.display = 'none';
     }
-
-    // Desplaza automáticamente al siguiente conjunto de imágenes
-    carrusel.scrollTo({
-        left: siguienteImagen,
-        behavior: 'smooth'
-    });
 }
 
-// Establece el intervalo para cambiar automáticamente las imágenes
-setInterval(carrusel_auto, intervalo);
+function next() {
+    cls();
+    if (current === slide.length - 1) current = -1;
+    current++;
+
+    slide[current].style.display = 'flex';
+}
+
+function prev() {
+    cls();
+    if (current === 0) current = slide.length;
+    current--;
+
+    slide[current].style.display = 'flex';
+
+}
+
+function start() {
+    cls();
+    slide[current].style.display = 'flex';
+}
+start();
 
 document.addEventListener("DOMContentLoaded", function() {
     let carrusel = document.getElementById('carrusel');
@@ -47,17 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if (window.innerWidth < 800) {
                 // Cambiar la imagen src con la imagen alternativa según la imagen original
                 switch (rutaOriginal) {
-                    case '../fuente/img/resident-evil-4.jpg':
-                        imagen.setAttribute('src', '../fuente/img/resident-evil-4-2.jpg');
+                    case '/resident-evil-4.c6315ae9.jpg':
+                        imagen.setAttribute('src', '/resident-evil-4-2.1c31d9a4.jpg');
                         break;
-                    case '../fuente/img/Skulls_and_bones_grande.jpg':
-                        imagen.setAttribute('src', '../fuente/img/Skull_and_bones.jpg');
+                    case '/finalFantasy-grande.0d89931a.png':
+                        imagen.setAttribute('src', '/final-fantasy.891914fe.jpg');
                         break;
-                    case '../fuente/img/Prince-persia-grande.jpg':
-                        imagen.setAttribute('src', '../fuente/img/Prince-persia.jpg');
+                    case '/Prince-persia-grande.c52aaa98.jpg':
+                        imagen.setAttribute('src', 'Prince-persia.7825e0c2.jpg');
                         break;
-                    case '../fuente/img/Starfield-grande.jpg':
-                        imagen.setAttribute('src', '../fuente/img/starfield.jpg');
+                    case '/Starfield-grande.d72496d9.jpg':
+                        imagen.setAttribute('src', '/Starfield.4f1432aa.jpg');
                         break;
                 }
             }
@@ -65,17 +65,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if (window.innerWidth >= 800) {
                 // Cambiar la imagen src con la imagen alternativa según la imagen original
                 switch (rutaOriginal) {
-                    case '../fuente/img/resident-evil-4-2.jpg':
-                        imagen.setAttribute('src', '../fuente/img/resident-evil-4.jpg');
+                    case '/resident-evil-4-2.1c31d9a4.jpg':
+                        imagen.setAttribute('src', '/resident-evil-4.c6315ae9.jpg');
                         break;
-                    case '../fuente/img/Skull_and_bones.jpg':
-                        imagen.setAttribute('src', '../fuente/img/Skulls_and_bones_grande.jpg');
+                    case '/final-fantasy.891914fe.jpg':
+                        imagen.setAttribute('src', '/finalFantasy-grande.0d89931a.png');
                         break;
-                    case '../fuente/img/Prince-persia.jpg':
-                        imagen.setAttribute('src', '../fuente/img/Prince-persia-grande.jpg');
+                    case 'Prince-persia.7825e0c2.jpg':
+                        imagen.setAttribute('src', '/Prince-persia-grande.c52aaa98.jpg');
                         break;
-                    case '../fuente/img/starfield.jpg':
-                        imagen.setAttribute('src', '../fuente/img/Starfield-grande.jpg');
+                    case '/Starfield.4f1432aa.jpg':
+                        imagen.setAttribute('src', '/Starfield-grande.d72496d9.jpg');
                         break;
                 }
             }

@@ -1,22 +1,47 @@
-.contenedor-carrusel{
+.contenedor-carrusel {
     position: relative;
     width: 100%;
-    overflow: hidden;
-    z-index: 1; /* Hace que este detrás del menú desplegable */
+    z-index: 1;/* Hace que este detrás del menú desplegable */
+    background-color: $color_fondo_web;
 }
 
-.contenedor-carrusel img{
+.carrusel {
+    height: auto;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.imagenes {
     width: 100%;
+}
+
+.imagenes img{
+    width: 100%;
+    height: auto;
     max-height: 100%;
 }
 
-.carrusel{
-    transition: all 600ms;
-    height: 400px;
-    overflow: hidden;
+.f_carrusel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.imagenes{
-    width: 100%;
+.f_carrusel:active{
+    transform: translateY(-50%) scale(0.85);
 }
 
+.f_carrusel img {
+    width: 50px;
+}
+
+.izquierda {
+    left: 15px;
+}
+.derecha {
+    right: 15px;
+}

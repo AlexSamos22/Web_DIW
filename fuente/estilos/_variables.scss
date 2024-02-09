@@ -1,7 +1,12 @@
 $color_negro: #000;
 $color_blanco: #fff;
+$color_hover_menu_principal: #0177E3;
+$color_fondo_web: #e4e4e4;
+$sombra_contenedor_flechas: rgba(0,0,0,0.23);
+$color_naranja_web: #FF6600;
+$color_naranja_web_opacidad_leve: rgba(255, 102, 0, 0.5);
 $fuente_titulos: 'Merriweather';
 $fuente_parrafos: "Work Sans";
 $fuente_basica: "serif";
-$clamp_titulos: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
-$clamp_texto: clamp(1.25rem, 1.2080rem + 0.1920vw, 1.3rem);
+$clamp_titulos: clamp(1.25rem, 1.2080rem + 0.1920vw, 1.3rem);
+$clamp_texto: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
