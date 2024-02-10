@@ -1,91 +1,87 @@
 .contenedor-global-tarjetas {
     background-color: $color_fondo_web;
-}
+    .contenedor-tarjetas,
+    .contenedor-tarjetas_2 {
+        width: 90vw;
+        position: relative;
+        margin: 1%;
+        margin-bottom: 25px;
 
-.contenedor-tarjetas,
-.contenedor-tarjetas_2 {
-    width: 90vw;
-    position: relative;
-    margin: 1%;
-    margin-bottom: 25px;
-}
+        @include mixin_media_query(mq7){
+           width: 75vw;
+        }
 
-.contenedor-tarjetas h1,
-.contenedor-tarjetas_2 h1 {
-    margin-bottom: 1%;
-    font-family: $fuente_titulos, $fuente_basica;
-    font-weight: 300;
-    font-style: normal;
-}
+        h1{
+            margin-bottom: 1%;
+            font-family: $fuente_titulos, $fuente_basica;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .flecha_izquierda,
+        .flecha_derecha,
+        .flecha_2_izquierda,
+        .flecha_2_derecha {
+            position: absolute;
+            top: 50%;
+            height: 50px;
+            cursor: pointer;
+            background: $color_blanco;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px $sombra_contenedor_flechas;
+            transform: translateY(-50%);
 
+            &:active{
+                transform: translateY(-50%) scale(0.85);
+            }
+        }
 
-.flecha_izquierda,
-.flecha_derecha,
-.flecha_2_izquierda,
-.flecha_2_derecha {
-    position: absolute;
-    top: 50%;
-    height: 50px;
-    cursor: pointer;
-    background: $color_blanco;
-    border-radius: 50%;
-    box-shadow: 0 3px 6px $sombra_contenedor_flechas;
-    transform: translateY(-50%);
-}
+        .flecha_izquierda,
+        .flecha_2_izquierda {
+            left: -22px;
+        }
 
-.flecha_izquierda:active,
-.flecha_derecha:active,
-.flecha_2_izquierda:active,
-.flecha_2_derecha:active {
-    transform: translateY(-50%) scale(0.85);
-}
+        .flecha_derecha,
+        .flecha_2_derecha {
+            right: -22px;
+        }
 
-.flecha_izquierda,
-.flecha_2_izquierda {
-    left: -22px;
-}
+        .tarjetas,
+        .tarjetas_2 {
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;/*Indica que el desplazamiento debe ser horizontal y que se muestren las tarjetas enteras*/
+            gap: 20px;
+            scroll-behavior: smooth;/*Da un deslizamiento suave al pasar de tarjeta*/
+            scrollbar-width: none;
+            
+            .tarjeta,
+            .tarjeta_2 {
+                scroll-snap-align: start;/*controla que siempre se muestra una tarjeta entera al deslizar*/
+                list-style: none;
+                cursor: pointer;
+                width: 100%;
+                .img {
+                    text-align: center;
 
-.flecha_derecha,
-.flecha_2_derecha {
-    right: -22px;
-}
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                        border: 2px solid $color_negro;
+                    }
+                }
+                .info {
+                    margin-top: 10px;
 
-.tarjetas,
-.tarjetas_2 {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;/*Indica que el desplazamiento debe ser horizontal y que se muestren las tarjetas enteras*/
-    gap: 20px;
-    scroll-behavior: smooth;/*Da un deslizamiento suave al pasar de tarjeta*/
-    scrollbar-width: none;
-}
-
-.tarjeta,
-.tarjeta_2 {
-    scroll-snap-align: start;/*controla que siempre se muestra una tarjeta entera al deslizar*/
-    list-style: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-.img {
-    text-align: center;
-}
-
-.img img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid $color_negro;
-}
-
-.info {
-    margin-top: 10px;
-}
-
-.info p {
-    margin: 0;
-    font-family: $fuente_parrafos, $fuente_basica;
-    font-weight: bold;
-    font-style: normal;
-    color: $color_negro;
+                    p{
+                        margin: 0;
+                        font-family: $fuente_parrafos, $fuente_basica;
+                        font-weight: bold;
+                        font-style: normal;
+                        color: $color_negro;
+                    }
+                }
+                
+            }
+        }
+    }
 }

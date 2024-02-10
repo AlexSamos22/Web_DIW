@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         imagen.setAttribute('src', 'Prince-persia.7825e0c2.jpg');
                         break;
                     case '/Starfield-grande.d72496d9.jpg':
-                        imagen.setAttribute('src', '/Starfield.4f1432aa.jpg');
+                        imagen.setAttribute('src', '/tekken8-2.69463b41.jpg');
                         break;
                 }
             }
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     case 'Prince-persia.7825e0c2.jpg':
                         imagen.setAttribute('src', '/Prince-persia-grande.c52aaa98.jpg');
                         break;
-                    case '/Starfield.4f1432aa.jpg':
+                    case '/tekken8-2.69463b41.jpg':
                         imagen.setAttribute('src', '/Starfield-grande.d72496d9.jpg');
                         break;
                 }

@@ -3,45 +3,66 @@
     width: 100%;
     z-index: 1;/* Hace que este detrás del menú desplegable */
     background-color: $color_fondo_web;
+
+    .carrusel {
+        height: auto;
+        max-height: 500px;
+        overflow: hidden;
+        @include mixin_media_query(mq1){
+            width: 90%;
+        }
+
+        .f_carrusel{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 2;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+
+            &:active{
+                transform: translateY(-50%) scale(0.85);
+            }
+
+            img{
+                width: 50px;
+            }
+        }
+
+        .imagenes {
+            width: 100%;
+
+            img{
+                  width: 100%;
+                height: auto;
+                max-height: 100%;
+            }
+        }
+
+        .izquierda {
+            left: 15px;
+            @include mixin_media_query(mq1){
+                left: 60px;
+            }
+
+            @include mixin_media_query(mq5){
+                left: 40px;
+            }
+
+        }
+        .derecha {
+            right: 15px;
+            @include mixin_media_query(mq1){
+                right: 60px;
+            }
+
+            @include mixin_media_query(mq5){
+                right: 40px;
+            }
+
+        }
+    }
 }
 
-.carrusel {
-    height: auto;
-    max-height: 500px;
-    overflow: hidden;
-}
 
-.imagenes {
-    width: 100%;
-}
-
-.imagenes img{
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-}
-
-.f_carrusel{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.f_carrusel:active{
-    transform: translateY(-50%) scale(0.85);
-}
-
-.f_carrusel img {
-    width: 50px;
-}
-
-.izquierda {
-    left: 15px;
-}
-.derecha {
-    right: 15px;
-}

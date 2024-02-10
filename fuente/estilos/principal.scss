@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200&display=swap');
 @import '../estilos/variables';
+@import '../estilos/mixins';
 @import "../estilos/global";
 @import '../estilos/disposicion/carrusel-home';
 @import '../estilos/disposicion/menuPrincipal';
 @import '../estilos/disposicion/tarjetas';
 @import '../estilos/disposicion/footer';
+@import '../estilos/disposicion/login-registro';
 @import '../estilos/presentacion/carrusel-home';
 @import '../estilos/presentacion/menuPrincipal';
 @import '../estilos/presentacion/tarjetas';
 @import '../estilos/presentacion/footer';
+@import '../estilos/presentacion/login-registro';
 @import '../estilos/media-query';

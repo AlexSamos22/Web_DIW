@@ -10,3 +10,14 @@ $fuente_parrafos: "Work Sans";
 $fuente_basica: "serif";
 $clamp_titulos: clamp(1.25rem, 1.2080rem + 0.1920vw, 1.3rem);
 $clamp_texto: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
+$transformacion_flechas_menu: rotate(180deg);
+$ruptura:(
+    mq1: 1200px,
+    mq2: 1160px,
+    mq3: 880px,
+    mq4: 850px,
+    mq5: 800px,
+    mq6: 690px,
+    mq7: 550px,
+    mq8: 400px 
+);

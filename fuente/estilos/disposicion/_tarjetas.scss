@@ -4,23 +4,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .flecha_izquierda,
+    .flecha_derecha,
+    .flecha_2_izquierda,
+    .flecha_2_derecha {
+        display: flex;
+    }
+    .tarjetas,
+    .tarjetas_2 {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(math.div(100%, 4) - 16px);/*Calcula el numero de columnas quitando espacios*/
+        
+        @include mixin_media_query(mq1){
+            grid-auto-columns: calc(math.div(100%, 3) - 15px);
+            gap: 10px;
+        }
+
+        @include mixin_media_query(mq4){
+            grid-auto-columns: calc(math.div(100%, 2) - 10px);
+        }
+
+        @include mixin_media_query(mq7){
+            grid-auto-columns: calc(math.div(100%, 1));
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 }
 
-.flecha_izquierda,
-.flecha_derecha,
-.flecha_2_izquierda,
-.flecha_2_derecha {
-    display: flex;
-}
 
-.tarjetas,
-.tarjetas_2 {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc(math.div(100%, 4) - 16px);/*Calcula el numero de columnas quitando espacios*/
-}
 
-.info {
-    display: flex;
-    justify-content: space-between;
-}
+
+
