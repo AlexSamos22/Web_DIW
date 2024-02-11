@@ -1,0 +1,78 @@
+.contenedor-global {
+    width: 100vw;
+    background-color: $color_fondo_web;
+
+    .contenido{
+        width: 94vw;
+        margin: 40px;
+        .filtro {
+            background-color: $color_fondo_web;
+            width: 25%;
+            height: 100%;
+            margin-right: 20px;
+    
+            .lista_categorias {
+                width: 90%;
+                height: 400px;
+                background-color: $color_blanco;
+                border: 1px solid $color_negro;
+                border-radius: 4px;
+        
+                h3 {
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+    
+                .item_categoria {
+                    width: 90%;
+                    padding: 15px 0;
+                    margin-bottom: 20px;
+                    background: $color_hover_menu_principal;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #fff;
+    
+                    &-activo {
+                        background-color: #E84C3D;
+                    }
+                }
+            }
+        }
+    
+        .articulos {
+            background-color: $color_fondo_web;
+            width: 75%;
+            height: 100%;
+            gap: 20px;
+    
+            .tarjeta {
+                list-style: none;
+                cursor: pointer;
+                width: 90%;
+                margin-right: 25px;
+    
+                .img {
+                    text-align: center;
+    
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                        border: 2px solid $color_negro;
+                    }
+                }
+    
+                .info {
+                    p {
+                        margin: 0;
+                        font-family: $fuente_parrafos, $fuente_basica;
+                        font-weight: bold;
+                        font-style: normal;
+                        color: $color_negro;
+                    }
+                }
+    
+            }
+        }
+    }
+}

@@ -82,40 +82,38 @@
             }
         }
     .enlaces_del_menu_lateral {
-        z-index: 1000;
-        background-color: #000;
-        width: 200px;
+        position: absolute;
+        max-width: 400px;
+        width: 40%;
         height: 100%;
+        top: 70px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: $color_negro;
         padding-top: 30px;
-        list-style: none;
         transition: right .3s;
-        position: fixed;
-        top: 8%;
-        right: -200px;
 
-        .elemento_del_menu_lateral {
-            color: $color_blanco;
-            text-decoration: none;
-            padding: 0 30px;
-            height: 10%;
             .enlace_del_menu_lateral {
                 cursor: pointer;
                 color: $color_blanco;
+                width: 90%;
+                padding: 15px 0;
+                margin-bottom: 20px;
+                text-align: center;
                 text-decoration: none;
-                padding: 0 20px;
-                height: 100%;
-                display: block;
                 font-family: $fuente_parrafos, $fuente_basica;
                 font-optical-sizing: auto;
                 font-weight: 600;
                 font-style: normal;
+                margin-left: 10px;
             
                 &:hover{
-                    color: $color_hover_menu_principal;
-                }
+                    background-color: $color_hover_menu_principal;
             }
         }
-    }
+     }
 }
+
 
 

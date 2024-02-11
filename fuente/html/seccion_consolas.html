@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/principal.scss">
+    <script src="../js/menuPrincipal.js" defer></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <section class="contenedor_del_menu">
+            <section class="hamburguesa_del_menu">
+                <img src="../iconos/menuPequeño.svg" class="menu__img">
+            </section>
+            <section class="logo_del_menu">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="logo web">
+                    <h1>Game Pulse</h1>
+                </a>
+            </section>
+            <ul class="enlaces_del_menu">
+                <li id="ordenadores" class="elemento_del_menu">
+                    <a href="../html/seccion_sobremesa.html" class="enlace_del_menu">Ordenadores </a>
+                </li>
+
+                <li id="consolas" class="elemento_del_menu">
+                    <a href="../html/seccion_consolas.html" class="enlace_del_menu">Consolas</a>
+                </li>
+
+                <li id="perifericos" class="elemento_del_menu">
+                    <a href="../html/seccion_perifericos.html" class="enlace_del_menu">Periféricos</a>
+                </li>
+            </ul>
+            <section class="enlaces_del_menu_lateral oculto">
+                    <a href="../html/seccion_sobremesa.html" class="enlace_del_menu_lateral">Ordenadores</a>
+                    <a href="#" class="enlace_del_menu_lateral">Consolas</a>
+                    <a href="#" class="enlace_del_menu_lateral">Periféricos</a>
+            </section>
+            <section class="iconos">
+                <a href="../html/login.html"><img src="../iconos/perfil.svg" alt="icono perfil"></a>
+                <a href=""><img src="../iconos/carrito.svg" alt="carrito"></a>
+            </section>
+        </section>
+    </nav>
+
+
+    <section class="contenedor-global">
+        <section class="contenido">
+            <section class="filtro">
+                <div class="lista_categorias">
+                    <h3>Filtro</h3>
+                    <a href="#" class="item_categoria" category="all">Todo</a>
+                    <a href="#" class="item_categoria" category="sobremesa">Sobremesa</a>
+                    <a href="#" class="item_categoria" category="portatiles">Portatiles</a>
+                    <a href="#" class="item_categoria" category="juegos">Juegos</a>
+                    <a href="#" class="item_categoria" category="componentes">Componentes</a>
+                </div>
+            </section>
+    
+            <section class="articulos">
+    
+                <section class="tarjeta" category="sobremesa">
+                    <section class="img">
+                        <a href=""><img src="../img/sobremesa4.jpg" alt="sobremesa4"></a>
+                    </section>
+                    <section class="info">
+                        <p>HP OMEN 45L</p>
+                        <p>3000€</p>
+                    </section>
+                </section>
+    
+                <section class="tarjeta" category="juegos">
+                    <section class="img">
+                        <a href=""><img src="../img/cities-skylines.jpg" alt="cities-skylines"></a>
+                    </section>
+                    <section class="info">
+                        <p>Cities Skylines II</p>
+                        <p>54€</p>
+                    </section>
+                </section>
+    
+                <section class="tarjeta" category="componentes">
+                    <section class="img">
+                        <a href=""><img src="../img/tarjeta_grafica.jpg" alt="cities-skylines"></a>
+                    </section>
+                    <section class="info">
+                        <p>Zotac Gaming RTX 4060</p>
+                        <p>319€</p>
+                    </section>
+                </section>
+    
+                <section class="tarjeta" category="portatiles">
+                    <section class="img">
+                        <a href=""><img src="../img/portatil1.jpg" alt="portatil1"></a>
+                    </section>
+                    <section class="info">
+                        <p>ASUS TUF Gaming F15</p>
+                        <p>779€</p>
+                    </section>
+                </section>
+    
+                <section class="tarjeta" category="juegos">
+                    <section class="img">
+                        <a href=""><img src="../img/horizon-forbidden.jpg" alt="horizon-forbidden"></a>
+                    </section>
+                    <section class="info">
+                        <p>Horizon Forbbiden</p>
+                        <p>60€</p>
+                    </section>
+                </section>
+    
+                <section class="tarjeta" category="sobremesa">
+                    <section class="img">
+                        <a href=""><img src="../img/sobremesa3.jpg" alt="sobremesa3"></a>
+                    </section>
+                    <section class="info">
+                        <p>PcCom Imperial </p>
+                        <p>2795€</p>
+                    </section>
+                </section>
+
+                <section class="tarjeta" category="componentes">
+                    <section class="img">
+                        <a href=""><img src="../img/placa_base.jpg" alt="placa_base"></a>
+                    </section>
+                    <section class="info">
+                        <p>Gigabyte Z790 AORUS XTREME</p>
+                        <p>1289€</p>
+                    </section>
+                </section>
+
+                <section class="tarjeta" category="portatiles">
+                    <section class="img">
+                        <a href=""><img src="../img/portatil3.jpg" alt="portatil3"></a>
+                    </section>
+                    <section class="info">
+                        <p>Lenovo IdeaPad Slim 3</p>
+                        <p>469€</p>
+                    </section>
+                </section>
+
+                <section class="tarjeta" category="componentes">
+                    <section class="img">
+                        <a href=""><img src="../img/procesador.jpg" alt="AMD Ryzen"></a>
+                    </section>
+                    <section class="info">
+                        <p>AMD Ryzen 7 7800X3D 4.2 GHz</p>
+                        <p>424,90€</p>
+                    </section>
+                </section>
+
+                <section class="tarjeta" category="juegos">
+                    <section class="img">
+                        <a href=""><img src="../img/final-fantasy.jpg" alt="final-fantasy"></a>
+                    </section>
+                    <section class="info">
+                        <p>Final Fantasy XVI</p>
+                        <p>50€</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <footer>
+        <section class="cuerpo_footer">
+
+            <section class="seccion1">
+                <h1>Informacion Contactos</h1>
+
+                <section class="contacto">
+                    <img src="../iconos/movil.svg" alt="movil">
+                    <p>667-89-57-84</p>
+                </section>
+
+                <section class="contacto">
+                    <img src="../iconos/correo.svg" alt="correo">
+                    <p>Gamepulse@gmail.com</p>
+                </section>
+            </section>
+
+            <section class="seccion2">
+                <h1>Sobre nosotros</h1>
+                <p>
+                    En Game Pulse, nos apasiona brindarte lo mejor en tecnología y entretenimiento.
+                    Nos dedicamos a ofrecerte una amplia gama de ordenadores, consolas, juegos y
+                    periféricos de calidad superior.
+                </p>
+            </section>
+
+            <section class="seccion3">
+                <h1>Redes Sociales</h1>
+                <section class="contenedor-redes">
+                    <section class="redes">
+                        <a href=""><img src="../iconos/instagram.svg" alt="instagram"></a>
+                    </section>
+                    <section class="redes">
+                        <a href=""><img src="../iconos/twitter.svg" alt="twitter"></a>
+                    </section>
+                    <section class="redes">
+                        <a href=""><img src="../iconos/facebook.svg" alt="facebook"></a>
+                    </section>
+                    <section class="redes">
+                        <a href=""><img src="../iconos/tiktok.svg" alt="tiktok"></a>
+                    </section>
+                </section>
+            </section>
+
+        </section>
+    </footer>
+</body>
+
+</html>

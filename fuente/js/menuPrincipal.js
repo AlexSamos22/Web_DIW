@@ -6,7 +6,7 @@ window.addEventListener("scroll", cerrarMenuEnScroll);
 function toggleMenu() {
     var menu = document.querySelector(".enlaces_del_menu_lateral");
     menu.classList.toggle("oculto");
-    menu.style.left = menu.style.left === "0px" ? "-200px" : "0px";
+    menu.style.left = menu.style.left === "0px" ? "-400px" : "0px";
 }
 
 // Función para cerrar el menú si la ventana se hace más grande de 800px
@@ -15,7 +15,7 @@ function cerrarMenuEnVentanaGrande() {
         var menu = document.querySelector(".enlaces_del_menu_lateral");
         if (!menu.classList.contains("oculto")) {
             menu.classList.add("oculto");
-            menu.style.left = "-200px";
+            menu.style.left = "-400px";
         }
     }
 }
@@ -25,7 +25,7 @@ function cerrarMenuEnScroll() {
     var menu = document.querySelector(".enlaces_del_menu_lateral");
     if (!menu.classList.contains("oculto")) {
         menu.classList.add("oculto");
-        menu.style.left = "-200px";
+        menu.style.left = "-400px";
     }
 }
 
