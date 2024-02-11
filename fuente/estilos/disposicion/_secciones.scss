@@ -5,27 +5,53 @@
     justify-content: center;
     .contenido{
         display: flex;
-
+        @include mixin_media_query(mq5){
+            flex-direction: column;
+         }
         .filtro{
             display: flex;
             justify-content: center;
-    
-    
+            @include mixin_media_query(mq5){
+                margin-bottom: 20px;
+             }
             .lista_categorias{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-    
-    
-                .item_categoria{
+                .enlaces{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @include mixin_media_query(mq5){
+                       display: grid;
+                       grid-template-columns: repeat(5,1fr);
+                     }
+                     @include mixin_media_query(mq6){
+                        grid-template-columns: repeat(3, 1fr);
+                     }
+
+                     @include mixin_media_query(mq7){
+                        grid-template-columns: repeat(2, 1fr);
+                     }
+                    .item_categoria{
                     display: block;
+                    }
                 }
+                
             }
         }
     
         .articulos{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            @include mixin_media_query(mq1){
+                grid-template-columns: repeat(2, 1fr);
+             }
+             @include mixin_media_query(mq9){
+                grid-template-columns: repeat(1, 1fr);
+                justify-items: center;
+              }
             .tarjeta{
                 .info {
                     display: flex;
