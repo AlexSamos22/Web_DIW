@@ -1,39 +1,39 @@
-let slide = document.querySelectorAll('.imagenes');
-var current = 0;
+let imagenes = document.querySelectorAll('.imagenes');
+var img_actual = 0;
 let f_derecha = document.getElementById("derecha");
 let f_izquierda = document.getElementById("izquierda");
 
-f_derecha.addEventListener("click", next);
-f_izquierda.addEventListener("click", prev);
+f_derecha.addEventListener("click", siguiente);
+f_izquierda.addEventListener("click", anterior);
 
-function cls() {
-    for (let i = 0; i < slide.length; i++) {
-        slide[i].style.display = 'none';
+function ocultar_imagenes() {
+    for (let i = 0; i < imagenes.length; i++) {
+        imagenes[i].style.display = 'none';
     }
 }
 
-function next() {
-    cls();
-    if (current === slide.length - 1) current = -1;
-    current++;
+function siguiente() {
+    ocultar_imagenes();
+    if (img_actual === imagenes.length - 1) img_actual = -1;
+    img_actual++;
 
-    slide[current].style.display = 'flex';
+    imagenes[img_actual].style.display = 'flex';
 }
 
-function prev() {
-    cls();
-    if (current === 0) current = slide.length;
-    current--;
+function anterior() {
+    ocultar_imagenes();
+    if (img_actual === 0) img_actual = imagenes.length;
+    img_actual--;
 
-    slide[current].style.display = 'flex';
+    imagenes[img_actual].style.display = 'flex';
 
 }
 
-function start() {
-    cls();
-    slide[current].style.display = 'flex';
+function empezar() {
+    ocultar_imagenes();
+    imagenes[img_actual].style.display = 'flex';
 }
-start();
+empezar();
 
 document.addEventListener("DOMContentLoaded", function() {
     let carrusel = document.getElementById('carrusel');
