@@ -1,0 +1,147 @@
+.contenedor_del_menu_carrito {
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    .logo_del_menu_carrito{
+        text-align: center;
+        h1 {
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        a {
+            color: $color_blanco;
+            text-decoration: none;
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+    .barra_progreso {
+        width: 40%;
+        margin-top: 10px;
+        @include mixin_media_query(mq7){
+            width: 60%;
+        }
+        .numero {
+            width: 40px;
+            height: 40px;
+            border: 2px solid $color_blanco;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        #uno{
+            border: 2px solid $color_naranja_web;
+            color: $color_naranja_web;
+
+        }
+
+        .linea_progreso {
+            background-color: $color_blanco;
+            height: 2px;
+            flex: 1;
+            margin: 0 10px;
+        }
+    }
+}
+
+.carrito{
+    background-color: $color_fondo_web;
+    .productos_añadidos{
+        background-color: $color_blanco;
+        border: 1px solid $color_negro;
+        width: 70%;
+        margin: 10px;
+        @include mixin_media_query(mq1){
+            width: 80%;
+        }
+        @include mixin_media_query(mq4){
+            width: 90%;
+        }
+        @include mixin_media_query(mq12){
+            width: 96%;
+        }
+        h1{
+            text-align: center;
+
+        }
+        .producto{
+            margin: 20px;
+            position: relative;
+            .img_producto{
+                width: 30%;
+                padding: 10px;
+                @include mixin_media_query(mq7){
+                    width: 50%;
+                }
+                img{
+                    width: 100%;
+                    border: 1px solid $color_negro;
+                    border-radius: 3%;
+                }
+            }
+
+            .info_producto{
+                width: 60%;
+                p{
+                    margin: 0; 
+                    width: 45%; 
+                    text-align: end;
+                    font-weight: bold;
+                }
+                #nombre{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .borrar{
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            &:not(:last-child) {
+                &::after {
+                    content: '';
+                    width: 100%; 
+                    border-top: 1px solid #ccc; 
+                    position: absolute;
+                    bottom: 0; 
+                }
+            }
+        }
+    }
+
+    .resumen_pedido{
+        background-color: $color_blanco;
+        border: 1px solid $color_negro;
+        width: 20%;
+        text-align: center;
+        @include mixin_media_query(mq1){
+            width: 40%;
+            margin: 20px;
+        }
+        @include mixin_media_query(mq12){
+            width: 60%;
+        }
+        .info_pedido{
+            width: 80%;
+            padding: 10px;
+            p{
+                font-weight: bold;
+            }
+        }
+        a{
+            margin: 10px;
+            width: 70%;
+            padding: 10px;
+            text-decoration: none;
+            color: $color_blanco;
+            background-color: $color_hover_menu_principal;
+            font-weight: bold;
+        }
+    }
+}

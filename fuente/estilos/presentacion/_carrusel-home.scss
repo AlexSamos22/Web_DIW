@@ -6,7 +6,6 @@
 
     .carrusel {
         height: auto;
-        max-height: 500px;
         overflow: hidden;
         @include mixin_media_query(mq1){
             width: 90%;

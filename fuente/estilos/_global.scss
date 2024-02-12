@@ -1,10 +1,12 @@
 p,
 a {
     font-size: $clamp_texto;
+    font-family: $fuente_parrafos, $fuente_basica;
 }
 
-h1 {
+h1,h3,h2 {
     font-size: $clamp_titulos;
+    font-family: $fuente_titulos, $fuente_basica;
 }
 
 * {

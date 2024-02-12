@@ -16,7 +16,6 @@
         text-align: center;
 
         h1 {
-            font-family: $fuente_titulos, $fuente_basica;
             font-weight: 300;
             font-style: normal;
         }
@@ -33,7 +32,7 @@
 
     .iconos {
         img {
-            width: 30px;
+            width: 33px;
             margin: 5px;
 
             &:hover {
@@ -51,7 +50,6 @@
             height: 100%;
             transition: transform .5s;
             z-index: 3;
-            font-family: $fuente_parrafos, $fuente_basica;
             font-optical-sizing: auto;
             font-weight: 600;
             font-style: normal;
@@ -102,7 +100,6 @@
                 margin-bottom: 20px;
                 text-align: center;
                 text-decoration: none;
-                font-family: $fuente_parrafos, $fuente_basica;
                 font-optical-sizing: auto;
                 font-weight: 600;
                 font-style: normal;

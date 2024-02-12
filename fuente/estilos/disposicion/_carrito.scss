@@ -1,0 +1,69 @@
+.contenedor_del_menu_carrito {
+    display: flex;
+    justify-content: space-between; 
+    @include mixin_media_query(mq7){
+       justify-content: center;
+    }
+    .logo_del_menu_carrito{
+        display: flex;
+    }
+    .barra_progreso {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include mixin_media_query(mq7){
+            display: none;
+        }
+        .numero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .linea_progreso {
+            flex: 1;
+        }
+    }
+    .iconos{
+        @include mixin_media_query(mq7){
+            display: none;
+        }
+    }
+}
+
+.carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mixin_media_query(mq1){
+        flex-direction: column;
+    }
+        .producto{
+            display: flex;
+            align-items: center;
+            @include mixin_media_query(mq8){
+                flex-direction: column;
+            }
+            .info_producto{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &:not(:last-child) {
+                &::after {
+                    content: '';
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .resumen_pedido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .info_pedido{
+            display: flex;
+            justify-content: space-between;
+        }
+}
