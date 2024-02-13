@@ -52,16 +52,16 @@
     .productos_añadidos{
         background-color: $color_blanco;
         border: 1px solid $color_negro;
-        width: 70%;
+        width: 50%;
         margin: 10px;
         @include mixin_media_query(mq1){
-            width: 80%;
+            width: 60%;
         }
         @include mixin_media_query(mq4){
-            width: 90%;
+            width: 70%;
         }
         @include mixin_media_query(mq12){
-            width: 96%;
+            width: 90%;
         }
         h1{
             text-align: center;

@@ -7,9 +7,9 @@
     }
 }
 
-@mixin mixin_media_query_horizontal($valor){
+@mixin mixin_media_query_horizontal($valor, $altura){
     $tamaño: map.get($ruptura, $valor);
-    @media screen and (max-width: $tamaño) and (orientation: landscape){
+    @media screen and (max-width: $tamaño) and (max-height: $altura) and (orientation: landscape){
         @content;
     }
 }
