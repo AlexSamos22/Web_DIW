@@ -142,6 +142,10 @@
             color: $color_blanco;
             background-color: $color_hover_menu_principal;
             font-weight: bold;
+
+            &:hover{
+                background-color: #0659a1;
+            }
         }
     }
 }

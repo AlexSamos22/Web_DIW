@@ -2,19 +2,23 @@
     height: 100vh;
     width: 50%;
     column-gap: 30px;
-    background-color: #e4e4e4;
-    @include mixin_media_query(mq3){
+    background-color: $color_fondo_web;
+    @include mixin_media_query(mq13){
         width: 100%;
     };
 
+    @include mixin_media_query_horizontal(mq13){
+        height: auto;
+    };
+
     .formulario{
-        position: absolute;
+        position: relative;
         max-width: 430px;
         width: 100%;
         padding: 30px;
         border-radius: 6px;
-        background: #FFF;
-        border: 1px solid black;
+        background: $color_blanco;
+        border: 1px solid $color_negro;
 
         @include mixin_media_query(mq8){
             padding: 20px 10px;
@@ -74,7 +78,7 @@
     
             button{
                 color: #fff;
-                background-color: #0177E3;
+                background-color: $color_hover_menu_principal;
                 transition: all 0.3s ease;
                 cursor: pointer;
                 font-optical-sizing: auto;
@@ -131,7 +135,7 @@
             a{
                 text-decoration: none;
                 color: #fff;
-                background-color: #0177E3;
+                background-color: $color_hover_menu_principal;
     
                 &:hover{
                     color: #fff;
@@ -142,7 +146,7 @@
             img{
                 height: 28px;
                 width: 28px;
-                color: #0177E3;
+                color: $color_hover_menu_principal;
                 font-size: 20px;
                 position: absolute;
                 top: 50%;
@@ -152,7 +156,6 @@
         }
     
     }
-    
 }
 
 .img_lateral{
@@ -173,4 +176,6 @@
         left: 0; 
     }
 }
+
+
 

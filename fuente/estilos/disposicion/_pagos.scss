@@ -1,4 +1,4 @@
-.contenedor_del_menu_carrito {
+.contenedor_del_menu_pago{
     display: flex;
     justify-content: space-between;
 
@@ -6,7 +6,7 @@
         justify-content: center;
     }
 
-    .logo_del_menu_carrito {
+    .logo_del_menu_pago {
         display: flex;
     }
 
@@ -36,46 +36,34 @@
         }
     }
 }
-
-.carrito {
+.contenedor-global-pago{
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include mixin_media_query(mq1) {
-        flex-direction: column;
-    }
-
-    .producto {
+    .contenedor_pago{
         display: flex;
         align-items: center;
-
-        @include mixin_media_query(mq8) {
+        justify-content: center;
+        flex-direction: column;
+    
+        .campo_doble{
+            display: flex;
+        }
+    
+        .resumen_pedido{
+            display: flex;
             flex-direction: column;
-        }
-
-        .info_producto {
-            display: flex;
-            justify-content: space-between;
             align-items: center;
-        }
-
-        &:not(:last-child) {
-            &::after {
-                content: '';
-                display: block;
+            .info_pedido{
+                display: flex;
+                justify-content: space-between;
             }
-        }
     }
-
-    .resumen_pedido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .info_pedido {
-            display: flex;
-            justify-content: space-between;
-        }
+    }
+    
+    .img_lateral_pago{
+        @include mixin_media_query(mq13){
+            display: none;
+        };
     }
 }
+
+

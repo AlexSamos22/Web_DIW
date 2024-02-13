@@ -1,0 +1,183 @@
+.contenedor_del_menu_pago {
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    .logo_del_menu_pago{
+        text-align: center;
+        h1 {
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        a {
+            color: $color_blanco;
+            text-decoration: none;
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+    .barra_progreso {
+        width: 40%;
+        margin-top: 10px;
+        @include mixin_media_query(mq7){
+            width: 60%;
+        }
+        .numero {
+            width: 40px;
+            height: 40px;
+            border: 2px solid $color_naranja_web;
+            border-radius: 50%;
+            font-weight: bold;
+            color: $color_naranja_web;
+        }
+
+        .linea_progreso {
+            background-color: $color_naranja_web;
+            height: 2px;
+            flex: 1;
+            margin: 0 10px;
+        }
+    }
+}
+.contenedor-global-pago{
+    height: 100vh;
+    width: 100vw;
+    @include mixin_media_query(mq13){
+        height: auto;
+    };
+    @include mixin_media_query_horizontal(mq13){
+        height: auto;
+    };
+    .contenedor_pago {
+        width: 50%;
+        gap: 20px;
+        background-color: $color_fondo_web;
+        @include mixin_media_query(mq13){
+            width: 100%
+        };
+    
+        .formulario {
+            position: relative;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 6px;
+            background: $color_blanco;
+            border: 1px solid $color_negro;
+            @include mixin_media_query(mq8){
+                padding: 20px 10px;
+            };
+    
+            header {
+                font-weight: 600;
+                color: #232836;
+                text-align: center;
+                font-weight: 300;
+                font-style: normal;
+    
+                .salida {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    cursor: pointer;
+                    width: 6%;
+                }
+            }
+    
+            form {
+                margin-top: 30px;
+    
+            }
+    
+            .campo {
+                position: relative;
+                height: 50px;
+                width: 100%;
+                margin-top: 20px;
+                border-radius: 6px;
+                font-optical-sizing: auto;
+                font-weight: bold;
+                font-style: normal;
+    
+                input,
+                button {
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    border-radius: 6px;
+                }
+    
+                input {
+                    padding: 0 15px;
+                    border: 1px solid#CACACA;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+    
+                    &:focus {
+                        border-bottom-width: 2px;
+                    }
+                }
+            }
+            .campo_doble {
+                gap: 20px;
+            }
+        }
+    
+        .resumen_pedido{
+            width: 100%;
+            max-width: 500px;
+            gap: 10px;
+            background-color: $color_blanco;
+            border: 1px solid $color_negro;
+            text-align: center;
+    
+            .info_pedido{
+                width: 80%;
+                padding: 10px;
+                p{
+                    font-weight: bold;
+                }
+            }
+            #precio_total{
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+            a{
+                margin: 10px;
+                width: 70%;
+                padding: 10px;
+                text-decoration: none;
+                color: $color_blanco;
+                background-color: $color_hover_menu_principal;
+                font-weight: bold;
+    
+                &:hover{
+                    background-color: #0659a1;
+                }
+            }
+        }
+    
+    }
+    .img_lateral_pago{
+        background-image: url(../img/img_fondo_pago.webp);
+        background-position: top;
+        background-size: cover;
+        width: 50%;
+    
+        img{
+            width: 100%; 
+            height: 100%;
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+        }
+    }
+}
+

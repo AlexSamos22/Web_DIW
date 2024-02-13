@@ -8,8 +8,8 @@
 </head>
 <body>
     <nav class="menu">
-        <section class="contenedor_del_menu_carrito">
-            <section class="logo_del_menu_carrito">
+        <section class="contenedor_del_menu_pago">
+            <section class="logo_del_menu_pago">
                 <a href="../index.html">
                     <img src="../img/logo.png" alt="logo web">
                     <h1>Game Pulse</h1>
@@ -17,7 +17,7 @@
             </section>
 
             <section class="barra_progreso">
-                <article class="numero" id="uno">1</article>
+                <article class="numero">1</article>
                 <article class="linea_progreso"></article>
                 <article class="numero" id="2">2</article>
             </section>
@@ -29,82 +29,69 @@
         </section>
     </nav>
 
+<section class="contenedor-global-pago">
+ <section class="contenedor_pago">
+        <article class="formulario">
+            <article class="contenido-formulario">
+                <header>
+                    <h1>Datos Tarjeta</h1>
+                    <a href="../html/carrito.html"><img src="../iconos/salida.svg" alt="" class="salida"></a>
+                </header>
+                <form action="#">
+                    <section class="campo">
+                        <input type="number" placeholder="Numero de tarjeta">
+                    </section>
 
-    <section class="carrito">
-        <article class="productos_añadidos">
-            <h1>Cesta</h1>
-            <article class="producto">
-                <section class="img_producto">
-                    <img src="../img/elden_Ring.jpg" alt="">
-                </section>
-                <section class="info_producto">
-                    <p id="nombre">Elden Ring</p>
-                    <p>60€</p>
-                </section>
-                <a class="borrar"><img src="../iconos/salida.svg" alt=""></a>                
-            </article>
-            <article class="producto">
-                <section class="img_producto">
-                    <img src="../img/ea-sports-fc-24-12000-fc-pointsr.jpg" alt="">
-                </section>
-                <section class="info_producto">
-                    <p id="nombre">1200 Fifa Points</p>
-                    <p>70€</p>
-                </section>
-                <a class="borrar"><img src="../iconos/salida.svg" alt=""></a>  
-            </article>
-            <article class="producto">
-                <section class="img_producto">
-                    <img src="../img/super-mario-bros-wonder.jpg" alt="">
-                </section>
-                <section class="info_producto">
-                    <p id="nombre">Super Mario Bros Wonder</p>
-                    <p>60€</p>
-                </section>
-                <a class="borrar"><img src="../iconos/salida.svg" alt=""></a>                
-            </article>
-            <article class="producto">
-                <section class="img_producto">
-                    <img src="../img/call-of-duty-modern-warfare-iii.jpg" alt="">
-                </section>
-                <section class="info_producto">
-                    <p id="nombre">Call Of Duty Modern Warfare III</p>
-                    <p>70€</p>
-                </section>
-                <a class="borrar"><img src="../iconos/salida.svg" alt=""></a>                
-            </article>
-            <article class="producto">
-                <section class="img_producto">
-                    <img src="../img/tarjeta-nintendo-eshop.jpg" alt="">
-                </section>
-                <section class="info_producto">
-                    <p id="nombre">Tarjeta Nintendo eShop</p>
-                    <p>50€</p>
-                </section>
-                <a class="borrar"><img src="../iconos/salida.svg" alt=""></a>                
+                    <section class="campo">
+                        <input type="text" placeholder="Titular de la tarjeta">
+                    </section>
+
+                    <section class="campo campo_doble">
+                        <input type="date" >
+                        <input type="password" placeholder="CVV">
+                    </section>
+                </form>
             </article>
         </article>
 
         <article class="resumen_pedido">
             <h1>Resumen Compra</h1>
             <article class="info_pedido">
-                <p>Productos:</p>
-                <p>6</p>
+                <p id="nombre">Elden Ring</p>
+                <p>60€</p>
             </article>
 
             <article class="info_pedido">
-                <p>Descuento:</p>
-                <p>0€</p>
+                <p id="nombre">1200 Fifa Points</p>
+                <p>70€</p>
             </article>
+
             <article class="info_pedido">
+                <p id="nombre">Super Mario Bros Wonder</p>
+                <p>60€</p>
+            </article>
+
+            <article class="info_pedido">
+                <p id="nombre">Call Of Duty Modern Warfare III</p>
+                <p>70€</p>
+            </article>
+
+            <article class="info_pedido">
+                <p id="nombre">Tarjeta Nintendo eShop</p>
+                <p>50€</p>
+            </article>
+
+            <article class="info_pedido" id="precio_total">
                 <p>Precio Total</p>
                 <p>310€</p>
             </article>
-            <a href="../html/pago.html">Realizar pago</a>
+            <a href="#">Pagar</a>
 
         </article>
     </section>
-
+    <section class="img_lateral_pago"></section>
+</section>
+   
 
     <footer>
         <section class="cuerpo_footer">
@@ -152,5 +139,6 @@
 
         </section>
     </footer>
+
 </body>
 </html>
