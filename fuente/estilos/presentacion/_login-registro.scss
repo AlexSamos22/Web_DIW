@@ -7,10 +7,6 @@
         width: 100%;
     };
 
-    @include mixin_media_query_horizontal(mq13){
-        height: auto;
-    };
-
     .formulario{
         position: relative;
         max-width: 430px;
