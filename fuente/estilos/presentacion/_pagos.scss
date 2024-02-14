@@ -44,7 +44,7 @@
 }
 .contenedor-global-pago{
     height: 100vh;
-    @include mixin_media_query(mq13){
+    @include mixin_media_query(mq1){
         height: auto;
     };
     @include mixin_media_query_horizontal(mq13, 435){
