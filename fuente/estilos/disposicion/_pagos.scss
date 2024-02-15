@@ -60,7 +60,7 @@
     }
     
     .img_lateral_pago{
-        @include mixin_media_query(mq13){
+        @include mixin_media_query(mq14){
             display: none;
         };
     }
