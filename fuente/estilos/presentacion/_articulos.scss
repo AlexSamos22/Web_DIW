@@ -1,0 +1,114 @@
+.contenedor_articulo{
+    .visuales{
+        .contenedor-carrusel {
+            position: relative;
+            width: 100%;
+            z-index: 1;/* Hace que este detrás del menú desplegable */
+            background-color: $color_fondo_web;
+        
+            .carrusel {
+                height: auto;
+                width: 100%;
+                overflow: hidden;
+                .f_carrusel{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    z-index: 2;
+                    border-radius: 50%;
+                    background-color: rgba(255, 255, 255, 0.5);
+        
+                    &:active{
+                        transform: translateY(-50%) scale(0.85);
+                    }
+        
+                    img{
+                        width: 50px;
+                    }
+                }
+        
+                .imagenes {
+                    width: 100%;
+        
+                    img{
+                          width: 100%;
+                        height: auto;
+                        max-height: 100%;
+                    }
+                }
+        
+                .izquierda {
+                    left: 15px;
+                    @include mixin_media_query(mq1){
+                        left: 60px;
+                    }
+        
+                    @include mixin_media_query(mq5){
+                        left: 40px;
+                    }
+        
+                }
+                .derecha {
+                    right: 15px;
+                    @include mixin_media_query(mq1){
+                        right: 60px;
+                    }
+        
+                    @include mixin_media_query(mq5){
+                        right: 40px;
+                    }
+        
+                }
+            }
+        }
+    }
+
+    .ediciones{
+        width: 70%;
+            @include mixin_media_query(mq16){
+                width: 75%;
+            }
+            @include mixin_media_query(mq15){
+                width: 80%;
+            }
+        .edicion{
+
+            .tarjeta {
+                list-style: none;
+                cursor: pointer;
+                width: 40%;
+                @include mixin_media_query(mq14){
+                    width: 60%;
+                 }
+                @include mixin_media_query(mq11){
+                    width: 70%;
+                 }
+                 @include mixin_media_query(mq10){
+                    width: 100%;
+                 }
+                .img {
+                    text-align: center;
+    
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                        border: 2px solid $color_negro;
+                    }
+                }
+    
+                .info {
+                    width: 100%;
+                    p {
+                        margin: 0;
+                        font-weight: bold;
+                        font-style: normal;
+                        color: $color_negro;
+                    }
+                }
+    
+            }
+        }
+    }
+}

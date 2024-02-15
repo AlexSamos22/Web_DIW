@@ -43,11 +43,21 @@
     }
 }
 .contenedor-global-pago{
+    height: 100vh;
+    @include mixin_media_query2(mq15, 655){
+        height: auto;
+    };
+    @include mixin_media_query(mq10){
+        height: auto;
+    };
+    @include mixin_media_query_horizontal(mq13, 545){
+        height: auto;
+    };
     .contenedor_pago {
         width: 50%;
         gap: 20px;
         background-color: $color_fondo_web;
-        @include mixin_media_query(mq13){
+        @include mixin_media_query(mq14){
             width: 100%
         };
     
@@ -130,7 +140,10 @@
             border: 1px solid $color_negro;
             text-align: center;
             margin-bottom: 10px;
-    
+            @include mixin_media_query(mq8){
+                padding: 20px 10px;
+            };
+            
             .info_pedido{
                 width: 80%;
                 padding: 10px;
