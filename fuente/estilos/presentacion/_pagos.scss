@@ -44,6 +44,7 @@
 }
 .contenedor-global-pago{
     height: 100vh;
+    background-color: $color_fondo_web;
     @include mixin_media_query2(mq15, 655){
         height: auto;
     };
@@ -57,6 +58,7 @@
         width: 50%;
         gap: 20px;
         background-color: $color_fondo_web;
+        margin: 10px;
         @include mixin_media_query(mq14){
             width: 100%
         };
@@ -69,7 +71,7 @@
             border-radius: 6px;
             background: $color_blanco;
             border: 1px solid $color_negro;
-            margin-top: 10px;
+            margin: 10px;
             @include mixin_media_query(mq8){
                 padding: 20px 10px;
             };
@@ -139,7 +141,7 @@
             background-color: $color_blanco;
             border: 1px solid $color_negro;
             text-align: center;
-            margin-bottom: 10px;
+            margin: 10px;
             @include mixin_media_query(mq8){
                 padding: 20px 10px;
             };

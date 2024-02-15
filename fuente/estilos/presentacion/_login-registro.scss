@@ -19,6 +19,7 @@
         border-radius: 6px;
         background: $color_blanco;
         border: 1px solid $color_negro;
+        margin: 10px;
 
         @include mixin_media_query(mq8){
             padding: 20px 10px;
@@ -152,6 +153,9 @@
                 top: 50%;
                 left: 15px;
                 transform: translateY(-50%);
+                @include mixin_media_query(mq19){
+                    display: none
+                };
             }
         }
     

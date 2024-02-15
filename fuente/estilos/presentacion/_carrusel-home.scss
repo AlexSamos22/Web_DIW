@@ -7,6 +7,7 @@
     .carrusel {
         height: auto;
         overflow: hidden;
+        width: 100%;
         @include mixin_media_query(mq1){
             width: 90%;
         }
