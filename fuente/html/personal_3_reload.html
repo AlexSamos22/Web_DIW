@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../estilos/principal.scss">
+    <script src="../js/menuPrincipal.js" defer></script>
+    <script src="../js/carrusel.js" defer></script>
 </head>
+
 <body>
     <nav class="menu">
         <section class="contenedor_del_menu">
@@ -32,9 +36,9 @@
                 </li>
             </ul>
             <section class="enlaces_del_menu_lateral oculto">
-                    <a href="../html/seccion_ordenadores.html" class="enlace_del_menu_lateral">Ordenadores</a>
-                    <a href="../html/seccion_consolas.html" class="enlace_del_menu_lateral">Consolas</a>
-                    <a href="../html/seccion_perifericos.html" class="enlace_del_menu_lateral">Periféricos</a>
+                <a href="../html/seccion_ordenadores.html" class="enlace_del_menu_lateral">Ordenadores</a>
+                <a href="../html/seccion_consolas.html" class="enlace_del_menu_lateral">Consolas</a>
+                <a href="../html/seccion_perifericos.html" class="enlace_del_menu_lateral">Periféricos</a>
             </section>
             <section class="iconos">
                 <a href="../html/login.html"><img src="../iconos/perfil.svg" alt="icono perfil"></a>
@@ -42,52 +46,120 @@
             </section>
         </section>
     </nav>
-<section class="global">
-    <section class="contenedor_articulo">
-        <section class="img_y_precio">
 
-          
-                <img src="../img/persona-3-reload.jpg" alt="persona-3-reload">
-          
 
-            <article class="precio">
-                <h2>Personal 3 Reload</h2>
+    <section class="global">
+        <section class="contenedor_articulo">
+            <section class="img_y_precio">
+                <article class="img">
+                    <img src="../img/persona-3-reload.jpg" alt="persona-3-reload">
+                </article>
 
-                <section class="plataforma">
-                    <article class="logo_plataforma">
-                        <img src="../iconos/steam.svg" alt="steam">
-                        <p>Steam</p>
-                    </article>
-                    <article class="check">
-                        <img src="../iconos/check.svg" alt="check">
-                        <p>En Stock</p>
-                    </article>
-                    <article class="check">
-                        <img src="../iconos/check.svg" alt="check">
-                        <p>Descarga Digital</p>
-                    </article>
+
+                <article class="precio">
+                    <h2>Personal 3 Reload</h2>
+
+                    <section class="plataforma">
+                        <article class="logo_plataforma">
+                            <img src="../iconos/steam.svg" alt="steam">
+                            <p>Steam</p>
+                        </article>
+                        <article class="check">
+                            <img src="../iconos/check.svg" alt="check">
+                            <p>Stock</p>
+                        </article>
+                        <article class="check">
+                            <img src="../iconos/check.svg" alt="check">
+                            <p>Digital</p>
+                        </article>
+                    </section>
+
+                    <p>60€</p>
+                    <a href="#">Añadir al carrito</a>
+                </article>
+            </section>
+            <section class="info">
+                <article class="resumen">
+                    <h2>Sinopsis</h2>
+                    <p>
+                        Ponte en la piel de un estudiante recién llegado que se ve arrojado a un destino inesperado
+                        cuando entra en la hora ""escondida"" entre un día y el siguiente. Despierta un increíble poder
+                        y persigue los misterios de la Hora Oscura, lucha por tus amigos y deja huella en su memoria.
+                        Persona 3 Reload es la nueva versión del RPG que definió el género y que renace para la era
+                        moderna
+                    </p>
+
+                </article>
+                <article class="mas_info">
+                    <h2>Acerca de</h2>
+                    <ul>
+                        <li>Desarrollador: ATLUS</li>
+                        <li>Distribuidor: SEGA, ATLUS</li>
+                        <li>Fecha de lanzamiento: 2 febrero 2024</li>
+                        <li>Género: Un solo jugador, Aventura, RPG, Estrategia</li>
+                    </ul>
+
+                </article>
+
+            </section>
+            <section class="visuales">
+                <h2 id="titulo">Visuales</h2>
+                <section class="contenedor-carrusel">
+                    <section class="carrusel" id="carrusel">
+                        <article class="f_carrusel izquierda" id="izquierda">
+                            <img src="../iconos/flecha-izquierda.svg" alt="">
+                        </article>
+
+                        <article class="imagenes img_1">
+                            <img src="../img/P6_003_BattleUI.png" alt="">
+                        </article>
+
+                        <article class="imagenes img_2">
+                            <img src="../img/resize.webp" alt="">
+                        </article>
+
+                        <article class="imagenes img_3">
+                            <img src="../img/persona-3-reload-new-moon-015.jpg" alt="">
+                        </article>
+
+                        <article class="imagenes img_4">
+                            <img src="../img/Persona-3-Reload-2.jpg" alt="">
+                        </article>
+
+                        <article class="f_carrusel derecha" id="derecha">
+                            <img src="../iconos/flecha-derecha.svg" alt="">
+                        </article>
+                    </section>
                 </section>
-                
-                <p>60€</p>
-                <a href="#">Añadir al carrito</a>
-            </article>
+            </section>
+            <section class="ediciones">
+                <article>
+                    <h2>Otras Ediciones</h2>
+                </article>
+                <article class="edicion">
+                    <section class="tarjeta" categoria="play">
+                        <section class="img">
+                            <a href=""><img src="../img/persona-3-reload-digital-deluxe-edition-digital-deluxe.jpg" alt="mando PS5"></a>
+                        </section>
+                        <section class="info">
+                            <p>Persona 3 Reload Deluxe Edition </p>
+                            <p>110€</p>
+                        </section>
+                    </section>
 
-        </section>
-
-        <section class="info_juego">
-
-            <article class="resumen">
-
-            </article>
-
-            <article class="reseñas">
-
-            </article>
-
+                    <section class="tarjeta" categoria="play">
+                        <section class="img">
+                            <a href=""><img src="../img/persona-3-reload-digital-premium-edition-digital-premium-edition.jpg" alt="mando PS5"></a>
+                        </section>
+                        <section class="info">
+                            <p>Persona 3 Reload Premium Edition</p>
+                            <p>180€</p>
+                        </section>
+                    </section>
+                </article>
+            </section>
         </section>
     </section>
-</section>
-   
 
     <footer>
         <section class="cuerpo_footer">
@@ -136,4 +208,5 @@
         </section>
     </footer>
 </body>
+
 </html>
