@@ -20,17 +20,11 @@
                 .enlaces{
                     display: flex;
                     align-items: center;
-                    @include mixin_media_query(mq5){
-                       display: grid;
-                       grid-template-columns: repeat(5,1fr);
-                     }
-                     @include mixin_media_query(mq6){
-                        grid-template-columns: repeat(3, 1fr);
-                     }
+                    @include mixin_media_query(mq6){
+                        flex-direction: column;
 
-                     @include mixin_media_query(mq7){
-                        grid-template-columns: repeat(2, 1fr);
-                     }
+                    }
+                    
                     .item_categoria{
                         display: block;
                     }

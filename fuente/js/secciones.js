@@ -1,6 +1,14 @@
 let  item_categoria = document.querySelectorAll('.item_categoria');
 let productos = document.querySelectorAll('.tarjeta');
 let footer = document.querySelector("footer");
+let botonFiltro = document.querySelector(".boton_filtro");
+let filtro = document.querySelector(".filtro");
+
+
+window.addEventListener('load', ajustarMenu);
+window.addEventListener('resize', ajustarMenu);
+
+
 let contenedor_global = document.querySelector(".contenedor-global");
 let seccion_relleno = document.createElement("section");
 seccion_relleno.style.background = "#e4e4e4";
@@ -40,3 +48,15 @@ item_categoria.forEach((item) =>{
     });
 });
 
+
+botonFiltro.addEventListener('click',() =>{
+    filtro.classList.toggle("oculto");
+});
+
+function ajustarMenu() {
+    if (window.innerWidth < 690) {
+        filtro.classList.add('oculto');
+    } else {
+        filtro.classList.remove('oculto');
+    }
+}
