@@ -32,6 +32,15 @@
                 
             }
         }
+
+        .boton_filtro{
+            align-self: flex-end;
+            display: none;
+            @include mixin_media_query(mq6){
+                display: flex;
+                align-items: center;
+            }
+        }
     
         .articulos{
             display: grid;
@@ -51,5 +60,11 @@
                 }
             }
         }
+
+
     }
+}
+
+.oculto{
+    display: none !important;
 }
