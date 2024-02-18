@@ -1,6 +1,5 @@
 let  item_categoria = document.querySelectorAll('.item_categoria');
 let productos = document.querySelectorAll('.tarjeta');
-let footer = document.querySelector("footer");
 let botonFiltro = document.querySelector(".boton_filtro");
 let filtro = document.querySelector(".filtro");
 
@@ -26,6 +25,7 @@ item_categoria.forEach((item) =>{
         item.classList.add('item_categoria-activo');
 
         let categoriaSelecionada = item.getAttribute('categoria');
+
 
         if (categoriaSelecionada !== 'all') {
             contenedor_global.insertAdjacentElement("afterend", seccion_relleno);

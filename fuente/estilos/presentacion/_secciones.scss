@@ -88,12 +88,9 @@
             .tarjeta {
                 list-style: none;
                 cursor: pointer;
-                width: 90%;
-                @include mixin_media_query(mq9){
-                    width: 80%;
-                 }
+                width: 75%;
                  @include mixin_media_query(mq10){
-                    width: 100%;
+                    width: 90%;
                  }
                 .img {
                     text-align: center;
