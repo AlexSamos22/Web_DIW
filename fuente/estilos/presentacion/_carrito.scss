@@ -47,105 +47,167 @@
     }
 }
 
-.carrito{
+.compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $color_fondo_web;
-    .productos_añadidos{
-        background-color: $color_blanco;
-        border: 1px solid $color_negro;
-        width: 50%;
-        margin: 10px;
-        @include mixin_media_query(mq1){
-            width: 60%;
-        }
-        @include mixin_media_query(mq4){
-            width: 70%;
-        }
-        @include mixin_media_query(mq12){
-            width: 90%;
-        }
-        h1{
-            text-align: center;
 
-        }
-        .producto{
-            margin: 20px;
-            position: relative;
-            .img_producto{
-                width: 30%;
-                padding: 10px;
-                @include mixin_media_query(mq7){
-                    width: 50%;
+    .carrito{
+        width: 80%;
+        .productos_añadidos{
+            background-color: $color_blanco;
+            border: 1px solid $color_negro;
+            width: 50%;
+            margin: 10px;
+            @include mixin_media_query(mq1){
+                width: 60%;
+            }
+            @include mixin_media_query(mq4){
+                width: 70%;
+            }
+            @include mixin_media_query(mq12){
+                width: 90%;
+            }
+            h1{
+                text-align: center;
+    
+            }
+            .producto{
+                margin: 20px;
+                position: relative;
+                .img_producto{
+                    width: 35%;
+                    padding: 10px;
+                    @include mixin_media_query(mq7){
+                        width: 50%;
+                    }
+                    img{
+                        width: 100%;
+                        border: 1px solid $color_negro;
+                        border-radius: 3%;
+                    }
                 }
-                img{
-                    width: 100%;
-                    border: 1px solid $color_negro;
-                    border-radius: 3%;
+    
+                .info_producto{
+                    width: 60%;
+                    p{
+                        margin: 0; 
+                        width: 45%; 
+                        text-align: end;
+                        font-weight: bold;
+                    }
+                    #nombre{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+    
+                .borrar{
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                &:not(:last-child) {
+                    &::after {
+                        content: '';
+                        width: 100%; 
+                        border-top: 1px solid #ccc; 
+                        position: absolute;
+                        bottom: 0; 
+                    }
                 }
             }
-
-            .info_producto{
+        }
+    
+        .resumen_pedido{
+            background-color: $color_blanco;
+            border: 1px solid $color_negro;
+            width: 20%;
+            text-align: center;
+            @include mixin_media_query(mq1){
+                width: 40%;
+                margin: 20px;
+            }
+            @include mixin_media_query(mq12){
                 width: 60%;
+            }
+            .info_pedido{
+                width: 80%;
+                padding: 10px;
                 p{
-                    margin: 0; 
-                    width: 45%; 
-                    text-align: end;
                     font-weight: bold;
                 }
-                #nombre{
-                    width: 100%;
-                    text-align: center;
-                }
             }
-
-            .borrar{
-                cursor: pointer;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-            &:not(:last-child) {
-                &::after {
-                    content: '';
-                    width: 100%; 
-                    border-top: 1px solid #ccc; 
-                    position: absolute;
-                    bottom: 0; 
+            a{
+                margin: 10px;
+                width: 70%;
+                padding: 10px;
+                text-decoration: none;
+                color: $color_blanco;
+                background-color: $color_hover_menu_principal;
+                font-weight: bold;
+    
+                &:hover{
+                    background-color: #0659a1;
                 }
             }
         }
     }
-
-    .resumen_pedido{
-        background-color: $color_blanco;
+    
+    .recomendaciones{
+        width: 56%;
+        font-weight: bold;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border: 1px solid $color_negro;
-        width: 20%;
-        text-align: center;
-        @include mixin_media_query(mq1){
-            width: 40%;
+        background-color: $color_blanco;
+    
+        .recomendacion{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin: 20px;
-        }
-        @include mixin_media_query(mq12){
-            width: 60%;
-        }
-        .info_pedido{
-            width: 80%;
-            padding: 10px;
-            p{
-                font-weight: bold;
-            }
-        }
-        a{
-            margin: 10px;
-            width: 70%;
-            padding: 10px;
-            text-decoration: none;
-            color: $color_blanco;
-            background-color: $color_hover_menu_principal;
-            font-weight: bold;
+            position: relative;
+            border-bottom: 1px solid lightgrey;
+            padding-bottom: 20px;
 
-            &:hover{
-                background-color: #0659a1;
+            &:last-of-type {
+                border-bottom: none;
+            }
+    
+            img{
+                width: 30%;
+                border-radius: 3%;
+            }
+    
+            .info-articulo{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 40%;
+            }
+    
+            a{
+                width: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 15px;
+                color: $color_naranja_web;
+
+                img{
+                    margin-top: 2%;
+                    width: 15%;
+                }
             }
         }
     }
 }
+
