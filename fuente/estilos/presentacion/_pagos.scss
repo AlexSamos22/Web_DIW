@@ -43,17 +43,7 @@
     }
 }
 .contenedor-global-pago{
-    height: 100vh;
     background-color: $color_fondo_web;
-    @include mixin_media_query2(mq15, 655){
-        height: auto;
-    };
-    @include mixin_media_query(mq10){
-        height: auto;
-    };
-    @include mixin_media_query_horizontal(mq13, 545){
-        height: auto;
-    };
     .contenedor_pago {
         width: 50%;
         gap: 20px;
@@ -62,6 +52,55 @@
         @include mixin_media_query(mq14){
             width: 100%
         };
+
+        .facturacion{
+            max-width: 500px;
+            width: 100%;
+            border-radius: 6px;
+            background: $color_blanco;
+            border: 1px solid $color_negro;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            h1{
+                margin-bottom: 10px;
+            }
+            .contenido-facturacion{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .direccion{
+                    text-align: start;
+                }
+                .icono_editar{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .formas-de-pago{
+            max-width: 500px;
+            width: 100%;
+            border-radius: 6px;
+            background: $color_blanco;
+            border: 1px solid $color_negro;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            h1{
+                margin-bottom: 10px;
+            }
+            .formas-pago{
+                a{
+                    cursor: pointer;
+                }
+                img{
+                    border: 1px solid $color_negro;
+                    border-radius: 20px;
+                    width: 40%;
+                }
+            }
+        }
     
         .formulario {
             position: relative;
