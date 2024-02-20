@@ -25,6 +25,9 @@
         }
     }
     .enlaces_del_menu_lateral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .enlace_del_menu_lateral {
             display: block;
         }
