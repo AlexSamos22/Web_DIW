@@ -1,166 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pago</title>
     <link rel="stylesheet" href="../estilos/principal.scss">
 </head>
+
 <body>
     <nav class="menu">
-        <section class="contenedor_del_menu_pago">
-            <section class="logo_del_menu_pago">
+        <article class="contenedor_del_menu_pago">
+            <div class="logo_del_menu_pago">
                 <a href="../index.html">
                     <img src="../img/logo.png" alt="logo web">
                     <h1>Game Pulse</h1>
                 </a>
-            </section>
+            </div>
 
-            <section class="barra_progreso">
-                <article class="numero">1</article>
-                <article class="linea_progreso"></article>
-                <article class="numero" id="2">2</article>
-            </section>
+            <div class="barra_progreso">
+                <div class="numero">1</div>
+                <div class="linea_progreso"></div>
+                <div class="numero" id="2">2</div>
+            </div>
 
-            <section class="iconos">
+            <div class="iconos">
                 <a href="../html/login.html"><img src="../iconos/perfil.svg" alt="icono perfil"></a>
                 <a href="../html/carrito.html"><img src="../iconos/carrito.svg" alt="carrito"></a>
-            </section>
-        </section>
+            </div>
+        </article>
     </nav>
 
-<section class="contenedor-global-pago">
- <section class="contenedor_pago">
+    <section class="contenedor-global-pago">
+        <section class="contenedor_pago">
 
-        <article class="facturacion">
-            <h1>Direccion de facturación</h1>
-            <div class="contenido-facturacion">
-                <div class="direccion">
-                    <p>Alejandro Samos</p>
-                    <p>C/Alamo Nº15 Granada</p>
+            <article class="facturacion">
+                <h1>Direccion de facturación</h1>
+                <div class="contenido-facturacion">
+                    <div class="direccion">
+                        <p>Alejandro Samos</p>
+                        <p>C/Alamo Nº15 Granada</p>
+                    </div>
+                    <a class="icono_editar" href="#"><img src="../iconos/editar.svg" alt="icono de editar"></a>
                 </div>
-                <a class="icono_editar" href="#"><img src="../iconos/editar.svg" alt="icono de editar"></a>
-            </div>
-        </article>
-
-        <article class="formulario">
-            <article class="contenido-formulario">
-                <header>
-                    <h1>Datos Tarjeta</h1>
-                    <a href="../html/carrito.html"><img src="../iconos/salida.svg" alt="icono-salida" class="salida"></a>
-                </header>
-                <form action="#">
-                    <section class="campo">
-                        <input type="number" placeholder="Numero de tarjeta">
-                    </section>
-
-                    <section class="campo">
-                        <input type="text" placeholder="Titular de la tarjeta">
-                    </section>
-
-                    <section class="campo campo_doble">
-                        <input type="date" >
-                        <input type="password" placeholder="CVV">
-                    </section>
-                </form>
-            </article>
-        </article>
-
-        <article class="formas-de-pago">
-            <h1>Otros metodos de pago</h1>
-            <div class="formas-pago">
-                <a href="#"><img src="../img/bizum-logo.jpg" alt="bizum"></a>
-                <a href="#"><img src="../img/paysafecard-logo.jpg" alt="paysafecard"></a>
-                <a href="#"><img src="../img/logo-trustly.webp" alt="trustly"></a>
-                <a href="#"><img src="../img/paypal-logo.jpg" alt="paypal"></a>
-            </div>
-        </article>
-
-        <article class="resumen_pedido">
-            <h1>Resumen Compra</h1>
-            <article class="info_pedido">
-                <p id="nombre">Elden Ring</p>
-                <p>60€</p>
             </article>
 
-            <article class="info_pedido">
-                <p id="nombre">1200 Fifa Points</p>
-                <p>70€</p>
+            <article class="formulario">
+                <div class="contenido-formulario">
+                    <header>
+                        <h1>Datos Tarjeta</h1>
+                        <a href="../html/carrito.html"><img src="../iconos/salida.svg" alt="icono-salida"
+                                class="salida"></a>
+                    </header>
+                    <form action="#">
+                        <div class="campo">
+                            <input type="number" placeholder="Numero de tarjeta">
+                        </div>
+
+                        <div class="campo">
+                            <input type="text" placeholder="Titular de la tarjeta">
+                        </div>
+
+                        <div class="campo campo_doble">
+                            <input type="date">
+                            <input type="password" placeholder="CVV">
+                        </div>
+                    </form>
+                </div>
             </article>
 
-            <article class="info_pedido">
-                <p id="nombre">PalWord</p>
-                <p>25€</p>
+            <article class="formas-de-pago">
+                <h1>Otros metodos de pago</h1>
+                <div class="formas-pago">
+                    <a href="#"><img src="../img/bizum-logo.jpg" alt="bizum"></a>
+                    <a href="#"><img src="../img/paysafecard-logo.jpg" alt="paysafecard"></a>
+                    <a href="#"><img src="../img/logo-trustly.webp" alt="trustly"></a>
+                    <a href="#"><img src="../img/paypal-logo.jpg" alt="paypal"></a>
+                </div>
             </article>
 
-            <article class="info_pedido">
-                <p id="nombre">Remnant 2</p>
-                <p>70€</p>
-            </article>
+            <article class="resumen_pedido">
+                <h1>Resumen Compra</h1>
+                <div class="info_pedido">
+                    <p id="nombre">Elden Ring</p>
+                    <p>60€</p>
+                </div>
 
-            <article class="info_pedido">
-                <p id="nombre">Starfield</p>
-                <p>50€</p>
-            </article>
+                <div class="info_pedido">
+                    <p id="nombre">1200 Fifa Points</p>
+                    <p>70€</p>
+                </div>
 
-            <article class="info_pedido" id="precio_total">
-                <p>Precio Total</p>
-                <p>280€</p>
-            </article>
-            <a href="#">Pagar</a>
+                <div class="info_pedido">
+                    <p id="nombre">PalWord</p>
+                    <p>25€</p>
+                </div>
 
-        </article>
+                <div class="info_pedido">
+                    <p id="nombre">Remnant 2</p>
+                    <p>70€</p>
+                </div>
+
+                <div class="info_pedido">
+                    <p id="nombre">Starfield</p>
+                    <p>50€</p>
+                </div>
+
+                <div class="info_pedido" id="precio_total">
+                    <p>Precio Total</p>
+                    <p>280€</p>
+                </div>
+                <a href="#">Pagar</a>
+
+            </article>
+        </section>
+        <article class="img_lateral_pago"></article>
     </section>
-    <section class="img_lateral_pago"></section>
-</section>
-   
+
 
     <footer>
         <section class="cuerpo_footer">
 
-            <section class="seccion1">
+            <article class="seccion1">
                 <h1>Informacion Contactos</h1>
 
-                <section class="contacto">
+                <div class="contacto">
                     <img src="../iconos/movil.svg" alt="movil">
                     <p>667-89-57-84</p>
-                </section>
+                </div>
 
-                <section class="contacto">
+                <div class="contacto">
                     <img src="../iconos/correo.svg" alt="correo">
                     <p>Gamepulse@gmail.com</p>
-                </section>
-            </section>
+                </div>
+            </article>
 
-            <section class="seccion2">
+            <article class="seccion2">
                 <h1>Sobre nosotros</h1>
                 <p>
                     En Game Pulse, nos apasiona brindarte lo mejor en tecnología y entretenimiento.
                     Nos dedicamos a ofrecerte una amplia gama de ordenadores, consolas, juegos y
                     periféricos de calidad superior.
                 </p>
-            </section>
+            </article>
 
-            <section class="seccion3">
+            <article class="seccion3">
                 <h1>Redes Sociales</h1>
-                <section class="contenedor-redes">
-                    <section class="redes">
+                <div class="contenedor-redes">
+                    <div class="redes">
                         <a href=""><img src="../iconos/instagram.svg" alt="instagram"></a>
-                    </section>
-                    <section class="redes">
+                    </div>
+                    <div class="redes">
                         <a href=""><img src="../iconos/twitter.svg" alt="twitter"></a>
-                    </section>
-                    <section class="redes">
+                    </div>
+                    <div class="redes">
                         <a href=""><img src="../iconos/facebook.svg" alt="facebook"></a>
-                    </section>
-                    <section class="redes">
+                    </div>
+                    <div class="redes">
                         <a href=""><img src="../iconos/tiktok.svg" alt="tiktok"></a>
-                    </section>
-                </section>
-            </section>
+                    </div>
+                </div>
+            </article>
 
         </section>
     </footer>
 
 </body>
+
 </html>
