@@ -38,7 +38,19 @@
                 }
             }
         }
+        .table{
+            display: table;
+            .fila{
+                display: table-row;
+                @include mixin_media_query(mq7) {
+                    display: flex;
+                }
 
+                .celda{
+                    display: table-cell;
+                }
+            }
+        }
         .visuales {
             display: flex;
             flex-direction: column;

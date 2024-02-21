@@ -116,8 +116,20 @@
             .mas_info {
                 width: 100%;
 
-                ul {
-                    list-style: none;
+                .table{
+                    line-height: 23px;
+                    .fila{
+                        .celda{
+                            padding-right: 30px;
+                            white-space: nowrap;
+                            @include mixin_media_query(mq7) {
+                                padding-right: 5px;
+                            }
+                            @include mixin_media_query(mq8) {
+                                white-space: inherit;
+                            }
+                        }
+                    }
                 }
             }
         }
