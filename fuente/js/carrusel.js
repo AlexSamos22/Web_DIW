@@ -6,34 +6,34 @@ let f_izquierda = document.getElementById("izquierda");
 f_derecha.addEventListener("click", siguiente);
 f_izquierda.addEventListener("click", anterior);
 
-function ocultar_imagenes() {
-    for (let i = 0; i < imagenes.length; i++) {
-        imagenes[i].style.display = 'none';
+
+
+function siguiente() {
+    if (img_actual === imagenes.length - 1) {
+        img_actual = 0;
+        imagenes[img_actual].classList.toggle('oculto');
+        imagenes[imagenes.length -1].classList.toggle('oculto');
+    } else {
+        img_actual++;
+        imagenes[img_actual].classList.toggle('oculto');
+        imagenes[img_actual-1].classList.toggle('oculto');
     }
 }
 
-function siguiente() {
-    ocultar_imagenes();
-    if (img_actual === imagenes.length - 1) img_actual = -1;
-    img_actual++;
-
-    imagenes[img_actual].style.display = 'flex';
-}
-
 function anterior() {
-    ocultar_imagenes();
-    if (img_actual === 0) img_actual = imagenes.length;
-    img_actual--;
-
-    imagenes[img_actual].style.display = 'flex';
-
+    if (img_actual === 0){
+        imagenes[img_actual].classList.toggle('oculto');
+        img_actual = imagenes.length - 1;
+        imagenes[img_actual].classList.toggle('oculto');
+    }else{
+        img_actual--;
+        imagenes[img_actual].classList.toggle('oculto');
+        imagenes[img_actual+1].classList.toggle('oculto');
+    }
+    
 }
 
-function empezar() {
-    ocultar_imagenes();
-    imagenes[img_actual].style.display = 'flex';
-}
-empezar();
+
 
 document.addEventListener("DOMContentLoaded", function() {
     let carrusel = document.getElementById('carrusel');
