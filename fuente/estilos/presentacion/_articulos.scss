@@ -121,7 +121,7 @@
                     .fila{
                         .celda{
                             padding-right: 30px;
-                            white-space: nowrap;
+                            white-space: nowrap; //El texto siempre se muestra en una sola linea
                             @include mixin_media_query(mq7) {
                                 padding-right: 5px;
                             }
@@ -206,6 +206,10 @@
 
             @include mixin_media_query(mq6) {
                 width: 95%;
+            }
+
+            @include mixin_media_query(mq10) {
+                text-align: start;
             }
 
             .edicion {

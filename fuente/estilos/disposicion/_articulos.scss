@@ -75,10 +75,6 @@
         }
 
         .ediciones {
-            @include mixin_media_query(mq10) {
-                text-align: start;
-            }
-
             .edicion {
                 display: flex;
 

@@ -1,5 +1,5 @@
 let imagenes = document.querySelectorAll('.imagenes');
-var img_actual = 0;
+let img_actual = 0;
 let f_derecha = document.getElementById("derecha");
 let f_izquierda = document.getElementById("izquierda");
 

@@ -13,10 +13,3 @@
         @content;
     }
 }
-
-@mixin mixin_media_query2($valor, $altura){
-    $tamaño: map.get($ruptura, $valor);
-    @media screen and (max-width: $tamaño) and (max-height: $altura){
-        @content;
-    }
-}

@@ -12,24 +12,21 @@ $clamp_titulos: clamp(1.25rem, 1.2080rem + 0.1920vw, 1.3rem);
 $clamp_texto: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
 $transformacion_flechas_menu: rotate(180deg);
 $ruptura:(
-    mq1: 1200px,
-    mq2: 1160px,
-    mq3: 880px,
-    mq4: 850px,
-    mq5: 800px,
-    mq6: 690px,
-    mq7: 550px,
-    mq8: 400px,
-    mq9: 600px,
-    mq10:450px,
-    mq11:750px,
-    mq12:600px,
+    mq1:  1200px,
+    mq2:  1160px,
+    mq3:  880px,
+    mq4:  850px,
+    mq5:  800px,
+    mq6:  690px,
+    mq7:  550px,
+    mq8:  400px,
+    mq9:  600px,
+    mq10: 450px,
+    mq11: 750px,
     mq13: 935px,
     mq14: 1020px,
     mq15: 1400px,
-    mq16: 1600px,
-    mq17: 1250px,
-    mq18: 1450,
     mq19: 350,
     mq20: 950
 );
+
