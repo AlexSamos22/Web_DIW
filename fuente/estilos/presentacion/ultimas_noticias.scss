@@ -12,7 +12,8 @@
        .noticia{
            width: 100%;
            text-align: justify;
-           border: 1px solid $color_resalte_articulos_home; 
+           border: 1px solid $color_resalte_articulos_home;
+           background-color: $color_blanco; 
            border-radius: 8px; 
            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
            padding: 10px;

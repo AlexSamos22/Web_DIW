@@ -59,6 +59,7 @@
             border: 1px solid $color_resalte_articulos_home; 
             border-radius: 8px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: $color_blanco; 
             width: 50%;
             margin: 10px;
             @include mixin_media_query(mq1){
@@ -127,6 +128,7 @@
             border: 1px solid $color_resalte_articulos_home; 
             border-radius: 8px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: $color_blanco; 
             width: 22%;
             text-align: center;
             @include mixin_media_query(mq1){
@@ -179,6 +181,7 @@
             border: 1px solid $color_resalte_articulos_home; 
             border-radius: 8px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: $color_blanco; 
            
             @include mixin_media_query(mq1){
                 width: 75%;
