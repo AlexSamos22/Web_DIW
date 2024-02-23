@@ -44,6 +44,7 @@ footer {
             width: 75%;
             margin: 10px 0;
             height: 100px;
+            text-align: center;
         }
 
         @include mixin_media_query(mq6){

@@ -54,7 +54,7 @@
             display: flex;
             align-items: center;
     
-            @include mixin_media_query(mq8) {
+            @include mixin_media_query(mq10) {
                 flex-direction: column;
             }
     
@@ -102,7 +102,7 @@
                 @include mixin_media_query(mq6){
                     justify-content: space-around;
                 }
-                @include mixin_media_query(mq8) {
+                @include mixin_media_query(mq10) {
                     flex-direction: column;
                 }
         

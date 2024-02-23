@@ -56,8 +56,9 @@
             width: 90%;
         }
         .productos_añadidos{
-            background-color: $color_blanco;
-            border: 1px solid $color_negro;
+            border: 1px solid $color_resalte_articulos_home; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 50%;
             margin: 10px;
             @include mixin_media_query(mq1){
@@ -76,7 +77,7 @@
             .producto{
                 margin: 20px;
                 position: relative;
-                border-bottom: 1px solid lightgrey;
+                border-bottom: 1px solid rgb(0, 0, 0);
                 padding-bottom: 20px;
 
                 &:last-of-type {
@@ -89,8 +90,8 @@
                     @include mixin_media_query(mq7){
                         width: 50%;
                     }
-                    @include mixin_media_query(mq8) {
-                        width: 80%;
+                    @include mixin_media_query(mq10) {
+                        width: 70%;
                     }
                     img{
                         width: 100%;
@@ -123,21 +124,22 @@
         }
     
         .resumen_pedido{
-            background-color: $color_blanco;
-            border: 1px solid $color_negro;
+            border: 1px solid $color_resalte_articulos_home; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 22%;
             text-align: center;
             @include mixin_media_query(mq1){
                 width: 40%;
                 margin: 20px;
             }
-            
-            @include mixin_media_query(mq8){
-                width: 80%;
-            }
 
             @include mixin_media_query(mq9){
                 width: 60%;
+            }
+            
+            @include mixin_media_query(mq10){
+                width: 80%;
             }
 
             .info_pedido{
@@ -174,8 +176,10 @@
         .juegos-recomendados{
             width: 72%;
             text-align: center;
-            border: 1px solid $color_negro;
-            background-color: $color_blanco;
+            border: 1px solid $color_resalte_articulos_home; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           
             @include mixin_media_query(mq1){
                 width: 75%;
             }
@@ -190,7 +194,7 @@
                 width: 90%;
                 margin: 20px;
                 position: relative;
-                border-bottom: 1px solid lightgrey;
+                border-bottom: 1px solid rgb(0, 0, 0);
                 padding-bottom: 20px;
     
                 &:last-of-type {
@@ -202,7 +206,7 @@
                     border-radius: 3%;
                     margin-left: 1%;
                     @include mixin_media_query(mq10) {
-                        width: 45%;
+                        width: 65%;
                     }
                     @include mixin_media_query(mq8) {
                         width: 70%;
