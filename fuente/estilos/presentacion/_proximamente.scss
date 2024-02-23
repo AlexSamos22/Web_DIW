@@ -1,0 +1,45 @@
+.reservas{
+    background-color: $color_fondo_web;
+    
+    h2{
+        width: 90vw;
+        margin-bottom: 10px;
+        @include mixin_media_query(mq7){
+            width: 75vw;
+        }
+    }
+    .juegos{
+        width: 90vw;
+       gap: 20px;
+       margin-bottom: 10px;
+        @include mixin_media_query(mq7){
+            width: 75vw;
+        }
+
+        .reserva{
+            cursor: pointer;
+            width: 100%;
+            .img {
+                text-align: center;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    border: 2px solid $color_negro;
+                }
+            }
+            .info {
+
+                p{
+                    margin: 0;
+                    font-weight: bold;
+                    font-style: normal;
+                    color: $color_negro;
+                }
+            }  
+        }
+    }  
+}
+
+       

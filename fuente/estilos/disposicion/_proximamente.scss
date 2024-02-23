@@ -1,0 +1,33 @@
+.reservas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        .juegos{
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+
+           @include mixin_media_query(mq1){
+            grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include mixin_media_query(mq4){
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include mixin_media_query(mq7){
+                grid-template-columns: repeat(1, 1fr);
+            }
+    
+            .reserva{
+                .info {
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+            }
+                
+            }
+        }
+    
+        
