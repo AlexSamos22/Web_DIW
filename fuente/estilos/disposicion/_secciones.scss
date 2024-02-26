@@ -20,7 +20,7 @@
                 .enlaces{
                     display: flex;
                     align-items: center;
-                    @include mixin_media_query(mq6){
+                    @include mixin_media_query(mq11){
                         flex-direction: column;
 
                     }
@@ -36,7 +36,7 @@
         .boton_filtro{
             align-self: flex-end;
             display: none;
-            @include mixin_media_query(mq6){
+            @include mixin_media_query(mq11){
                 display: flex;
                 align-items: center;
             }

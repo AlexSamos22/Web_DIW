@@ -54,7 +54,7 @@ botonFiltro.addEventListener('click',() =>{
 });
 
 function ajustarMenu() {
-    if (window.innerWidth < 690) {
+    if (window.innerWidth < 750) {
         filtro.classList.add('oculto');
     } else {
         filtro.classList.remove('oculto');

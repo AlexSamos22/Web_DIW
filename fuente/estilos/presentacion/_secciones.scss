@@ -6,7 +6,7 @@
         margin: 20px;
         .filtro {
             width: 90%;
-            @include mixin_media_query(mq6){
+            @include mixin_media_query(mq11){
                 position: absolute;
                 max-width: 400px;
                 width: 40%;
@@ -25,7 +25,7 @@
                 .enlaces{
                     width: 100%;
                     gap: 20px;
-                    @include mixin_media_query(mq6){
+                    @include mixin_media_query(mq11){
                         width: 70%;
                     }
                     @include mixin_media_query(mq10){
