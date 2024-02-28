@@ -22,7 +22,6 @@
         .flecha_2_derecha {
             position: absolute;
             top: 50%;
-            height: 50px;
             cursor: pointer;
             background: $color_blanco;
             border-radius: 50%;
@@ -37,11 +36,17 @@
         .flecha_izquierda,
         .flecha_2_izquierda {
             left: -22px;
+            img{
+                width: 50px;
+            }
         }
 
         .flecha_derecha,
         .flecha_2_derecha {
             right: -22px;
+            img{
+                width: 50px;
+            }
         }
 
         .tarjetas,
