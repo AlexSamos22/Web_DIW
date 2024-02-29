@@ -2,6 +2,12 @@ let  item_categoria = document.querySelectorAll('.item_categoria');
 let productos = document.querySelectorAll('.tarjeta');
 let botonFiltro = document.querySelector(".boton_filtro");
 let filtro = document.querySelector(".filtro");
+let menu = document.querySelector(".enlaces_del_menu_lateral");
+document.querySelector(".hamburguesa_del_menu").addEventListener("click", () =>{
+    if(!filtro.classList.contains("oculto")){
+        filtro.classList.add("oculto");
+    }
+});
 
 
 window.addEventListener('load', ajustarMenu);
@@ -51,6 +57,9 @@ item_categoria.forEach((item) =>{
 
 botonFiltro.addEventListener('click',() =>{
     filtro.classList.toggle("oculto");
+    if(!menu.classList.contains("oculto")){
+        menu.classList.add("oculto");
+    }
 });
 
 function ajustarMenu() {
