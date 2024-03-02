@@ -25,7 +25,6 @@ seccion_relleno.style.height="400px";
 
 
 item_categoria.forEach((item) =>{
-    //Se recorren todos los enlaces del filtro
     item.addEventListener('click', (event) =>{
         // Remueve la clase 'active' de todos los elementos
         item_categoria.forEach((item) => {
@@ -35,22 +34,19 @@ item_categoria.forEach((item) =>{
         // Agrega la clase 'active' al elemento clicado
         item.classList.add('item_categoria-activo');
 
-        //se saca el valor del atributo data-categoria
         let categoriaSelecionada = item.getAttribute('data-categoria');
 
-        //Si la categoria selecionada no es all se añade el contenedor de relleno para bajar el footer
+
         if (categoriaSelecionada !== 'all') {
             contenedor_global.insertAdjacentElement("afterend", seccion_relleno);
         } else {
             seccion_relleno.remove();
         }
 
-        //Se esconden todos los productos
         productos.forEach((producto) =>{
             producto.style.display = 'none';
         });
 
-        //A los productos que coinciden con la categoria seleccionada o cuando la categria es all se muestran
         productos.forEach((producto) =>{
             if (producto.getAttribute('data-categoria') == categoriaSelecionada || categoriaSelecionada == "all") {
                 producto.style.display = 'block';
@@ -62,7 +58,7 @@ item_categoria.forEach((item) =>{
     });
 });
 
-//Cuando se le de click al boton del filtro en resposive se muestre el filtro y si esta el menu lo cierre tambien
+
 botonFiltro.addEventListener('click',() =>{
     filtro.classList.toggle("oculto");
     if(!menu.classList.contains("oculto")){
@@ -70,7 +66,6 @@ botonFiltro.addEventListener('click',() =>{
     }
 });
 
-//Funcion para que el filtroi siempre este oculto a no ser que se le de click al boton tanto al recargar la pagina como cuando se redimensiona
 function ajustarMenu() {
     if (window.innerWidth < 750) {
         filtro.classList.add('oculto');
