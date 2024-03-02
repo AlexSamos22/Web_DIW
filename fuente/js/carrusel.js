@@ -7,7 +7,7 @@ f_derecha.addEventListener("click", siguiente);
 f_izquierda.addEventListener("click", anterior);
 
 
-
+//Controla las imagenes que se van mostrando aplicando o quitando la clase oculto
 function siguiente() {
     if (img_actual === imagenes.length - 1) {
         img_actual = 0;
@@ -20,7 +20,7 @@ function siguiente() {
     }
 }
 
-
+//Lo mismo que la funcion siguiente pero cuando se va al reves
 function anterior() {
     if (img_actual === 0){
         imagenes[img_actual].classList.toggle('oculto');
