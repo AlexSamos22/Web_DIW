@@ -7,7 +7,7 @@ f_derecha.addEventListener("click", siguiente);
 f_izquierda.addEventListener("click", anterior);
 
 
-
+//Funcion que controla la imagen actual y la siguiente y le aplica a la actual el display none y a la sigguiente se lo quita usando la clase oculto
 function siguiente() {
     if (img_actual === imagenes.length - 1) {
         img_actual = 0;
@@ -20,6 +20,7 @@ function siguiente() {
     }
 }
 
+//Lo mismo que siguiente pero controla el movimiento hacia atras
 function anterior() {
     if (img_actual === 0){
         imagenes[img_actual].classList.toggle('oculto');
