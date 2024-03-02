@@ -30,7 +30,7 @@ item_categoria.forEach((item) =>{
         // Agrega la clase 'active' al elemento clicado
         item.classList.add('item_categoria-activo');
 
-        let categoriaSelecionada = item.getAttribute('categoria');
+        let categoriaSelecionada = item.getAttribute('data-categoria');
 
 
         if (categoriaSelecionada !== 'all') {
@@ -44,7 +44,7 @@ item_categoria.forEach((item) =>{
         });
 
         productos.forEach((producto) =>{
-            if (producto.getAttribute('categoria') == categoriaSelecionada || categoriaSelecionada == "all") {
+            if (producto.getAttribute('data-categoria') == categoriaSelecionada || categoriaSelecionada == "all") {
                 producto.style.display = 'block';
             }
         });

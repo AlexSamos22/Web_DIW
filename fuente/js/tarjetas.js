@@ -6,7 +6,7 @@ let flechas = document.querySelectorAll(".flecha");
 flechas.forEach(flecha => {
     flecha.addEventListener("click", () => {
         // Calcula si el carrusel se mueve hacia la derecha o izquierda
-        tarjetas.scrollLeft += flecha.id == "izquierda" ? -tamanoPrimeraTarjeta : tamanoPrimeraTarjeta;
+        tarjetas.scrollLeft += flecha.id == "izquierda2" ? -tamanoPrimeraTarjeta : tamanoPrimeraTarjeta;
     });
 });
 
